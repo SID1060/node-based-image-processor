@@ -17,10 +17,11 @@ void NodeBox::paint(QPainter *painter, const QStyleOptionGraphicsItem *, QWidget
 }
 
 void NodeBox::mousePressEvent(QGraphicsSceneMouseEvent *event) {
-    m_lastPos = event->pos();
+    emit nodeSelected(this);
     QGraphicsItem::mousePressEvent(event);
 }
 
 void NodeBox::mouseMoveEvent(QGraphicsSceneMouseEvent *event) {
     QGraphicsItem::mouseMoveEvent(event);
 }
+

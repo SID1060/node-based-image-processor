@@ -1,15 +1,20 @@
-#ifndef NODEBOX_H
-#define NODEBOX_H
+#pragma once
 
 #include <QGraphicsItem>
 #include <QGraphicsSceneMouseEvent>
+#include <QObject>
 
-class NodeBox : public QGraphicsItem {
+class NodeBox : public QObject, public QGraphicsItem {
+    Q_OBJECT
+
 public:
     NodeBox();
 
     QRectF boundingRect() const override;
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override;
+
+signals:
+    void nodeSelected(NodeBox* node);
 
 protected:
     void mousePressEvent(QGraphicsSceneMouseEvent *event) override;
@@ -18,5 +23,3 @@ protected:
 private:
     QPointF m_lastPos;
 };
-
-#endif // NODEBOX_H

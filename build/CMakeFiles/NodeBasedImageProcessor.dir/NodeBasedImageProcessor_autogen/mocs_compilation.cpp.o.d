@@ -306,4 +306,15 @@ CMakeFiles/NodeBasedImageProcessor.dir/NodeBasedImageProcessor_autogen/mocs_comp
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h \
  /usr/include/c++/14/variant \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qactiongroup.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qaction.h
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qaction.h \
+ /home/siddharth/node-based-image-processor/build/NodeBasedImageProcessor_autogen/6YEA5652QU/moc_NodeBox.cpp \
+ /home/siddharth/node-based-image-processor/build/NodeBasedImageProcessor_autogen/6YEA5652QU/../../../include/NodeBox.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsItem \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgraphicsitem.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainterpath.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsSceneMouseEvent \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgraphicssceneevent.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h
