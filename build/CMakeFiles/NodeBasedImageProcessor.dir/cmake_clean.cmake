@@ -10,6 +10,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/NodeBasedImageProcessor.dir/src/MainWindow.cpp.o.d"
   "CMakeFiles/NodeBasedImageProcessor.dir/src/Node.cpp.o"
   "CMakeFiles/NodeBasedImageProcessor.dir/src/Node.cpp.o.d"
+  "CMakeFiles/NodeBasedImageProcessor.dir/src/NodeBox.cpp.o"
+  "CMakeFiles/NodeBasedImageProcessor.dir/src/NodeBox.cpp.o.d"
   "CMakeFiles/NodeBasedImageProcessor.dir/src/main.cpp.o"
   "CMakeFiles/NodeBasedImageProcessor.dir/src/main.cpp.o.d"
   "NodeBasedImageProcessor"

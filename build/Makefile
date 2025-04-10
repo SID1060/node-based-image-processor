@@ -251,6 +251,30 @@ src/Node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/Node.cpp.s
 .PHONY : src/Node.cpp.s
 
+src/NodeBox.o: src/NodeBox.cpp.o
+.PHONY : src/NodeBox.o
+
+# target to build an object file
+src/NodeBox.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/NodeBox.cpp.o
+.PHONY : src/NodeBox.cpp.o
+
+src/NodeBox.i: src/NodeBox.cpp.i
+.PHONY : src/NodeBox.i
+
+# target to preprocess a source file
+src/NodeBox.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/NodeBox.cpp.i
+.PHONY : src/NodeBox.cpp.i
+
+src/NodeBox.s: src/NodeBox.cpp.s
+.PHONY : src/NodeBox.s
+
+# target to generate assembly for a file
+src/NodeBox.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/NodeBox.cpp.s
+.PHONY : src/NodeBox.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -298,6 +322,9 @@ help:
 	@echo "... src/Node.o"
 	@echo "... src/Node.i"
 	@echo "... src/Node.s"
+	@echo "... src/NodeBox.o"
+	@echo "... src/NodeBox.i"
+	@echo "... src/NodeBox.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

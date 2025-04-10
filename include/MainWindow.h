@@ -1,16 +1,21 @@
 #pragma once
 
 #include <QMainWindow>
-class QGraphicsView;
-class QDockWidget;
+#include <QGraphicsView>
+#include <QGraphicsScene>
+#include <QDockWidget>
+#include <QAction>
 
 class MainWindow : public QMainWindow {
     Q_OBJECT
+
 public:
     MainWindow(QWidget* parent = nullptr);
     ~MainWindow();
 
 private:
+    QGraphicsScene* scene;
     QGraphicsView* m_canvasView;
-    QDockWidget*  m_propertiesDock;
+    QDockWidget* m_propertiesDock;
+    QAction* m_addNodeAction;
 };

@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/siddharth/node-based-image-processor/src/Graph.cpp" "CMakeFiles/NodeBasedImageProcessor.dir/src/Graph.cpp.o" "gcc" "CMakeFiles/NodeBasedImageProcessor.dir/src/Graph.cpp.o.d"
   "/home/siddharth/node-based-image-processor/src/MainWindow.cpp" "CMakeFiles/NodeBasedImageProcessor.dir/src/MainWindow.cpp.o" "gcc" "CMakeFiles/NodeBasedImageProcessor.dir/src/MainWindow.cpp.o.d"
   "/home/siddharth/node-based-image-processor/src/Node.cpp" "CMakeFiles/NodeBasedImageProcessor.dir/src/Node.cpp.o" "gcc" "CMakeFiles/NodeBasedImageProcessor.dir/src/Node.cpp.o.d"
+  "/home/siddharth/node-based-image-processor/src/NodeBox.cpp" "CMakeFiles/NodeBasedImageProcessor.dir/src/NodeBox.cpp.o" "gcc" "CMakeFiles/NodeBasedImageProcessor.dir/src/NodeBox.cpp.o.d"
   "/home/siddharth/node-based-image-processor/src/main.cpp" "CMakeFiles/NodeBasedImageProcessor.dir/src/main.cpp.o" "gcc" "CMakeFiles/NodeBasedImageProcessor.dir/src/main.cpp.o.d"
   )
 
