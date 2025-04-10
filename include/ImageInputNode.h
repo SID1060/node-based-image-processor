@@ -1,0 +1,23 @@
+#pragma once
+
+#include "NodeBox.h"
+#include <QImage>
+#include <QString>
+
+class ImageInputNode : public NodeBox {
+    Q_OBJECT
+
+public:
+    ImageInputNode();
+
+    void setImage(const QString& filePath);
+    QImage getImage() const;
+    QString getMetadata() const;
+
+protected:
+    void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override;
+
+private:
+    QImage image;
+    QString path;
+};

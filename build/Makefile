@@ -203,6 +203,30 @@ src/Graph.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/Graph.cpp.s
 .PHONY : src/Graph.cpp.s
 
+src/ImageInputNode.o: src/ImageInputNode.cpp.o
+.PHONY : src/ImageInputNode.o
+
+# target to build an object file
+src/ImageInputNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/ImageInputNode.cpp.o
+.PHONY : src/ImageInputNode.cpp.o
+
+src/ImageInputNode.i: src/ImageInputNode.cpp.i
+.PHONY : src/ImageInputNode.i
+
+# target to preprocess a source file
+src/ImageInputNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/ImageInputNode.cpp.i
+.PHONY : src/ImageInputNode.cpp.i
+
+src/ImageInputNode.s: src/ImageInputNode.cpp.s
+.PHONY : src/ImageInputNode.s
+
+# target to generate assembly for a file
+src/ImageInputNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/ImageInputNode.cpp.s
+.PHONY : src/ImageInputNode.cpp.s
+
 src/MainWindow.o: src/MainWindow.cpp.o
 .PHONY : src/MainWindow.o
 
@@ -316,6 +340,9 @@ help:
 	@echo "... src/Graph.o"
 	@echo "... src/Graph.i"
 	@echo "... src/Graph.s"
+	@echo "... src/ImageInputNode.o"
+	@echo "... src/ImageInputNode.i"
+	@echo "... src/ImageInputNode.s"
 	@echo "... src/MainWindow.o"
 	@echo "... src/MainWindow.i"
 	@echo "... src/MainWindow.s"

@@ -103,10 +103,24 @@ CMakeFiles/NodeBasedImageProcessor.dir/src/Graph.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NodeBasedImageProcessor.dir/src/Graph.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/siddharth/node-based-image-processor/src/Graph.cpp -o CMakeFiles/NodeBasedImageProcessor.dir/src/Graph.cpp.s
 
+CMakeFiles/NodeBasedImageProcessor.dir/src/ImageInputNode.cpp.o: CMakeFiles/NodeBasedImageProcessor.dir/flags.make
+CMakeFiles/NodeBasedImageProcessor.dir/src/ImageInputNode.cpp.o: /home/siddharth/node-based-image-processor/src/ImageInputNode.cpp
+CMakeFiles/NodeBasedImageProcessor.dir/src/ImageInputNode.cpp.o: CMakeFiles/NodeBasedImageProcessor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/siddharth/node-based-image-processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/NodeBasedImageProcessor.dir/src/ImageInputNode.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NodeBasedImageProcessor.dir/src/ImageInputNode.cpp.o -MF CMakeFiles/NodeBasedImageProcessor.dir/src/ImageInputNode.cpp.o.d -o CMakeFiles/NodeBasedImageProcessor.dir/src/ImageInputNode.cpp.o -c /home/siddharth/node-based-image-processor/src/ImageInputNode.cpp
+
+CMakeFiles/NodeBasedImageProcessor.dir/src/ImageInputNode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/NodeBasedImageProcessor.dir/src/ImageInputNode.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/siddharth/node-based-image-processor/src/ImageInputNode.cpp > CMakeFiles/NodeBasedImageProcessor.dir/src/ImageInputNode.cpp.i
+
+CMakeFiles/NodeBasedImageProcessor.dir/src/ImageInputNode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NodeBasedImageProcessor.dir/src/ImageInputNode.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/siddharth/node-based-image-processor/src/ImageInputNode.cpp -o CMakeFiles/NodeBasedImageProcessor.dir/src/ImageInputNode.cpp.s
+
 CMakeFiles/NodeBasedImageProcessor.dir/src/MainWindow.cpp.o: CMakeFiles/NodeBasedImageProcessor.dir/flags.make
 CMakeFiles/NodeBasedImageProcessor.dir/src/MainWindow.cpp.o: /home/siddharth/node-based-image-processor/src/MainWindow.cpp
 CMakeFiles/NodeBasedImageProcessor.dir/src/MainWindow.cpp.o: CMakeFiles/NodeBasedImageProcessor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/siddharth/node-based-image-processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/NodeBasedImageProcessor.dir/src/MainWindow.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/siddharth/node-based-image-processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/NodeBasedImageProcessor.dir/src/MainWindow.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NodeBasedImageProcessor.dir/src/MainWindow.cpp.o -MF CMakeFiles/NodeBasedImageProcessor.dir/src/MainWindow.cpp.o.d -o CMakeFiles/NodeBasedImageProcessor.dir/src/MainWindow.cpp.o -c /home/siddharth/node-based-image-processor/src/MainWindow.cpp
 
 CMakeFiles/NodeBasedImageProcessor.dir/src/MainWindow.cpp.i: cmake_force
@@ -120,7 +134,7 @@ CMakeFiles/NodeBasedImageProcessor.dir/src/MainWindow.cpp.s: cmake_force
 CMakeFiles/NodeBasedImageProcessor.dir/src/Node.cpp.o: CMakeFiles/NodeBasedImageProcessor.dir/flags.make
 CMakeFiles/NodeBasedImageProcessor.dir/src/Node.cpp.o: /home/siddharth/node-based-image-processor/src/Node.cpp
 CMakeFiles/NodeBasedImageProcessor.dir/src/Node.cpp.o: CMakeFiles/NodeBasedImageProcessor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/siddharth/node-based-image-processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/NodeBasedImageProcessor.dir/src/Node.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/siddharth/node-based-image-processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/NodeBasedImageProcessor.dir/src/Node.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NodeBasedImageProcessor.dir/src/Node.cpp.o -MF CMakeFiles/NodeBasedImageProcessor.dir/src/Node.cpp.o.d -o CMakeFiles/NodeBasedImageProcessor.dir/src/Node.cpp.o -c /home/siddharth/node-based-image-processor/src/Node.cpp
 
 CMakeFiles/NodeBasedImageProcessor.dir/src/Node.cpp.i: cmake_force
@@ -134,7 +148,7 @@ CMakeFiles/NodeBasedImageProcessor.dir/src/Node.cpp.s: cmake_force
 CMakeFiles/NodeBasedImageProcessor.dir/src/NodeBox.cpp.o: CMakeFiles/NodeBasedImageProcessor.dir/flags.make
 CMakeFiles/NodeBasedImageProcessor.dir/src/NodeBox.cpp.o: /home/siddharth/node-based-image-processor/src/NodeBox.cpp
 CMakeFiles/NodeBasedImageProcessor.dir/src/NodeBox.cpp.o: CMakeFiles/NodeBasedImageProcessor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/siddharth/node-based-image-processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/NodeBasedImageProcessor.dir/src/NodeBox.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/siddharth/node-based-image-processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/NodeBasedImageProcessor.dir/src/NodeBox.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NodeBasedImageProcessor.dir/src/NodeBox.cpp.o -MF CMakeFiles/NodeBasedImageProcessor.dir/src/NodeBox.cpp.o.d -o CMakeFiles/NodeBasedImageProcessor.dir/src/NodeBox.cpp.o -c /home/siddharth/node-based-image-processor/src/NodeBox.cpp
 
 CMakeFiles/NodeBasedImageProcessor.dir/src/NodeBox.cpp.i: cmake_force
@@ -148,7 +162,7 @@ CMakeFiles/NodeBasedImageProcessor.dir/src/NodeBox.cpp.s: cmake_force
 CMakeFiles/NodeBasedImageProcessor.dir/src/main.cpp.o: CMakeFiles/NodeBasedImageProcessor.dir/flags.make
 CMakeFiles/NodeBasedImageProcessor.dir/src/main.cpp.o: /home/siddharth/node-based-image-processor/src/main.cpp
 CMakeFiles/NodeBasedImageProcessor.dir/src/main.cpp.o: CMakeFiles/NodeBasedImageProcessor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/siddharth/node-based-image-processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/NodeBasedImageProcessor.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/siddharth/node-based-image-processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/NodeBasedImageProcessor.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NodeBasedImageProcessor.dir/src/main.cpp.o -MF CMakeFiles/NodeBasedImageProcessor.dir/src/main.cpp.o.d -o CMakeFiles/NodeBasedImageProcessor.dir/src/main.cpp.o -c /home/siddharth/node-based-image-processor/src/main.cpp
 
 CMakeFiles/NodeBasedImageProcessor.dir/src/main.cpp.i: cmake_force
@@ -163,6 +177,7 @@ CMakeFiles/NodeBasedImageProcessor.dir/src/main.cpp.s: cmake_force
 NodeBasedImageProcessor_OBJECTS = \
 "CMakeFiles/NodeBasedImageProcessor.dir/NodeBasedImageProcessor_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/NodeBasedImageProcessor.dir/src/Graph.cpp.o" \
+"CMakeFiles/NodeBasedImageProcessor.dir/src/ImageInputNode.cpp.o" \
 "CMakeFiles/NodeBasedImageProcessor.dir/src/MainWindow.cpp.o" \
 "CMakeFiles/NodeBasedImageProcessor.dir/src/Node.cpp.o" \
 "CMakeFiles/NodeBasedImageProcessor.dir/src/NodeBox.cpp.o" \
@@ -173,6 +188,7 @@ NodeBasedImageProcessor_EXTERNAL_OBJECTS =
 
 NodeBasedImageProcessor: CMakeFiles/NodeBasedImageProcessor.dir/NodeBasedImageProcessor_autogen/mocs_compilation.cpp.o
 NodeBasedImageProcessor: CMakeFiles/NodeBasedImageProcessor.dir/src/Graph.cpp.o
+NodeBasedImageProcessor: CMakeFiles/NodeBasedImageProcessor.dir/src/ImageInputNode.cpp.o
 NodeBasedImageProcessor: CMakeFiles/NodeBasedImageProcessor.dir/src/MainWindow.cpp.o
 NodeBasedImageProcessor: CMakeFiles/NodeBasedImageProcessor.dir/src/Node.cpp.o
 NodeBasedImageProcessor: CMakeFiles/NodeBasedImageProcessor.dir/src/NodeBox.cpp.o
@@ -237,7 +253,7 @@ NodeBasedImageProcessor: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.6.0
 NodeBasedImageProcessor: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.6.0
 NodeBasedImageProcessor: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.6.0
 NodeBasedImageProcessor: CMakeFiles/NodeBasedImageProcessor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/siddharth/node-based-image-processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable NodeBasedImageProcessor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/siddharth/node-based-image-processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable NodeBasedImageProcessor"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/NodeBasedImageProcessor.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
