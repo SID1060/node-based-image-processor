@@ -2106,6 +2106,7 @@ CMakeFiles/NodeBasedImageProcessor.dir/src/ImageInputNode.cpp.o: /home/siddharth
   /usr/lib/gcc/x86_64-linux-gnu/14/include/syslimits.h
 
 CMakeFiles/NodeBasedImageProcessor.dir/src/MainWindow.cpp.o: /home/siddharth/node-based-image-processor/src/MainWindow.cpp \
+  /home/siddharth/node-based-image-processor/include/BrightnessContrastNode.h \
   /home/siddharth/node-based-image-processor/include/ImageInputNode.h \
   /home/siddharth/node-based-image-processor/include/MainWindow.h \
   /home/siddharth/node-based-image-processor/include/NodeBox.h \
@@ -2456,10 +2457,12 @@ CMakeFiles/NodeBasedImageProcessor.dir/src/MainWindow.cpp.o: /home/siddharth/nod
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMenu \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMenuBar \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSlider \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QVBoxLayout \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractscrollarea.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractslider.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qaction.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qactiongroup.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qboxlayout.h \
@@ -2481,6 +2484,7 @@ CMakeFiles/NodeBasedImageProcessor.dir/src/MainWindow.cpp.o: /home/siddharth/nod
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qscrollarea.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qslider.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgets-config.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -3637,11 +3641,15 @@ CMakeFiles/NodeBasedImageProcessor.dir/src/main.cpp.o: /home/siddharth/node-base
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qboxlayout.h:
 
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractslider.h:
+
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QVBoxLayout:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSlider:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMenuBar:
 
@@ -4050,6 +4058,8 @@ CMakeFiles/3.30.3/CMakeSystem.cmake:
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontainertools_impl.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qslider.h:
 
 /usr/include/opencv4/opencv2/stitching/warpers.hpp:
 

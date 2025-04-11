@@ -48,7 +48,8 @@ MainWindow::MainWindow(QWidget* parent)
 
     // ImageInputNode spawn
     connect(m_addNodeAction, &QAction::triggered, this, [this]() {
-        ImageInputNode* newNode = new ImageInputNode();
+        lastInputNode = new ImageInputNode();                    // store pointer to last image node
+        ImageInputNode* newNode = lastInputNode;
         newNode->setPos(qrand() % 400, qrand() % 300);
         scene->addItem(newNode);
         connect(newNode, &NodeBox::nodeSelected, this, &MainWindow::onNodeSelected);
@@ -58,6 +59,11 @@ MainWindow::MainWindow(QWidget* parent)
     connect(addBCNode, &QAction::triggered, this, [this]() {
         BrightnessContrastNode* bcNode = new BrightnessContrastNode();
         bcNode->setPos(qrand() % 400, qrand() % 300);
+
+        // ✅ pass image from input node to brightness node
+        if (lastInputNode)
+            bcNode->setInputImage(lastInputNode->getImage());
+
         scene->addItem(bcNode);
         connect(bcNode, &NodeBox::nodeSelected, this, &MainWindow::onNodeSelected);
     });

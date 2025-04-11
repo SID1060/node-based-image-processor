@@ -7,6 +7,8 @@
 #include <QAction>
 
 class NodeBox;
+class ImageInputNode;             // forward declaration
+class BrightnessContrastNode;     // forward declaration
 
 class MainWindow : public QMainWindow {
     Q_OBJECT
@@ -23,4 +25,8 @@ private:
     QGraphicsView* m_canvasView;
     QDockWidget* m_propertiesDock;
     QAction* m_addNodeAction;
+
+    // ✅ Added pointer to last ImageInputNode
+    ImageInputNode* lastInputNode = nullptr;
 };
+
