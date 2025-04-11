@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "NodeBasedImageProcessor_autogen"
   "CMakeFiles/NodeBasedImageProcessor.dir/NodeBasedImageProcessor_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/NodeBasedImageProcessor.dir/NodeBasedImageProcessor_autogen/mocs_compilation.cpp.o.d"
+  "CMakeFiles/NodeBasedImageProcessor.dir/src/BrightnessContrastNode.cpp.o"
+  "CMakeFiles/NodeBasedImageProcessor.dir/src/BrightnessContrastNode.cpp.o.d"
   "CMakeFiles/NodeBasedImageProcessor.dir/src/Graph.cpp.o"
   "CMakeFiles/NodeBasedImageProcessor.dir/src/Graph.cpp.o.d"
   "CMakeFiles/NodeBasedImageProcessor.dir/src/ImageInputNode.cpp.o"

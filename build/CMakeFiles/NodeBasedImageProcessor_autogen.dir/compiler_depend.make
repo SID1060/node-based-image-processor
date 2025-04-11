@@ -6,11 +6,13 @@ NodeBasedImageProcessor_autogen/timestamp: /home/siddharth/node-based-image-proc
   CMakeFiles/3.30.3/CMakeCXXCompiler.cmake \
   CMakeFiles/3.30.3/CMakeSystem.cmake \
   NodeBasedImageProcessor_autogen/moc_predefs.h \
+  /home/siddharth/node-based-image-processor/include/BrightnessContrastNode.h \
   /home/siddharth/node-based-image-processor/include/Graph.h \
   /home/siddharth/node-based-image-processor/include/ImageInputNode.h \
   /home/siddharth/node-based-image-processor/include/MainWindow.h \
   /home/siddharth/node-based-image-processor/include/Node.h \
   /home/siddharth/node-based-image-processor/include/NodeBox.h \
+  /home/siddharth/node-based-image-processor/src/BrightnessContrastNode.cpp \
   /home/siddharth/node-based-image-processor/src/Graph.cpp \
   /home/siddharth/node-based-image-processor/src/ImageInputNode.cpp \
   /home/siddharth/node-based-image-processor/src/MainWindow.cpp \
@@ -872,11 +874,9 @@ NodeBasedImageProcessor_autogen/timestamp: /home/siddharth/node-based-image-proc
 
 /usr/include/x86_64-linux-gnu/c++/14/bits/os_defines.h:
 
-/usr/include/c++/14/charconv:
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
-/usr/include/c++/14/bits/stl_heap.h:
-
-/usr/include/c++/14/functional:
+/usr/include/x86_64-linux-gnu/c++/14/bits/gthr-default.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qversiontagging.h:
 
@@ -920,11 +920,13 @@ NodeBasedImageProcessor_autogen/timestamp: /home/siddharth/node-based-image-proc
 
 /usr/include/asm-generic/errno-base.h:
 
+/usr/include/c++/14/bits/stl_heap.h:
+
+/usr/include/c++/14/charconv:
+
+/usr/include/c++/14/functional:
+
 /usr/include/c++/14/bits/stl_algo.h:
-
-/usr/include/c++/14/bits/std_mutex.h:
-
-/usr/include/c++/14/bits/stl_multimap.h:
 
 /usr/share/cmake-3.30/Modules/Compiler/ARMClang-DetermineCompiler.cmake:
 
@@ -980,10 +982,6 @@ CMakeFiles/3.30.3/CMakeCCompiler.cmake:
 
 /usr/include/syscall.h:
 
-/usr/share/cmake-3.30/Modules/Compiler/Compaq-C-DetermineCompiler.cmake:
-
-/usr/include/c++/14/bits/out_ptr.h:
-
 /usr/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:
 
 /usr/include/c++/14/bits/stl_bvector.h:
@@ -997,10 +995,6 @@ CMakeFiles/3.30.3/CMakeCCompiler.cmake:
 /usr/include/x86_64-linux-gnu/qt5/QtGui/QImage:
 
 /usr/include/c++/14/bits/locale_classes.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsScene:
-
-/usr/include/c++/14/bits/nested_exception.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
@@ -1048,13 +1042,33 @@ CMakeFiles/3.30.3/CMakeCCompiler.cmake:
 
 /usr/include/c++/14/bits/localefwd.h:
 
-/usr/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:
+/home/siddharth/node-based-image-processor/src/Graph.cpp:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake:
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qpoint.h:
 
-/usr/include/x86_64-linux-gnu/asm/errno.h:
+/usr/include/c++/14/ios:
 
-/usr/include/c++/14/bits/cxxabi_forced.h:
+/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+
+/usr/include/c++/14/bits/utility.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiglobal.h:
+
+/usr/include/c++/14/bits/move.h:
+
+/usr/include/c++/14/backward/auto_ptr.h:
+
+/usr/include/c++/14/pstl/glue_numeric_defs.h:
+
+/usr/include/c++/14/bits/locale_classes.tcc:
+
+/usr/share/cmake-3.30/Modules/Platform/UnixPaths.cmake:
+
+/usr/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:
+
+/usr/include/c++/14/new:
+
+NodeBasedImageProcessor_autogen/moc_predefs.h:
 
 /usr/share/cmake-3.30/Modules/Compiler/GNU-C.cmake:
 
@@ -1063,8 +1077,6 @@ CMakeFiles/3.30.3/CMakeCCompiler.cmake:
 /usr/include/c++/14/backward/binders.h:
 
 /usr/include/c++/14/bits/ios_base.h:
-
-/usr/include/c++/14/array:
 
 /home/siddharth/node-based-image-processor/src/Node.cpp:
 
@@ -1080,6 +1092,16 @@ CMakeFiles/3.30.3/CMakeCCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/asm/unistd.h:
 
+/home/siddharth/node-based-image-processor/src/MainWindow.cpp:
+
+/usr/include/c++/14/bits/algorithmfwd.h:
+
+/home/siddharth/node-based-image-processor/src/ImageInputNode.cpp:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow:
+
+/home/siddharth/node-based-image-processor/include/NodeBox.h:
+
 /usr/include/c++/14/bits/stl_pair.h:
 
 /usr/bin/cmake:
@@ -1090,7 +1112,9 @@ CMakeFiles/3.30.3/CMakeCCompiler.cmake:
 
 /usr/include/c++/14/bits/atomic_wait.h:
 
-/usr/include/c++/14/bits/algorithmfwd.h:
+/usr/include/c++/14/cwchar:
+
+/usr/include/c++/14/stdexcept:
 
 /usr/share/cmake-3.30/Modules/CMakeDetermineCompilerSupport.cmake:
 
@@ -1115,40 +1139,6 @@ CMakeFiles/3.30.3/CMakeCCompiler.cmake:
 /usr/include/c++/14/bits/stl_tree.h:
 
 /usr/include/c++/14/bit:
-
-/usr/include/c++/14/bits/ranges_algobase.h:
-
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
-
-/usr/include/x86_64-linux-gnu/c++/14/bits/gthr-default.h:
-
-/usr/include/x86_64-linux-gnu/bits/sched.h:
-
-/usr/include/c++/14/bits/utility.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiglobal.h:
-
-/usr/include/c++/14/bits/move.h:
-
-/usr/include/c++/14/backward/auto_ptr.h:
-
-/usr/include/c++/14/pstl/glue_numeric_defs.h:
-
-/usr/include/c++/14/bits/locale_classes.tcc:
-
-/usr/share/cmake-3.30/Modules/Platform/UnixPaths.cmake:
-
-/usr/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:
-
-/usr/include/c++/14/new:
-
-NodeBasedImageProcessor_autogen/moc_predefs.h:
-
-/usr/share/cmake-3.30/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake:
-
-/usr/include/c++/14/bits/alloc_traits.h:
-
-/home/siddharth/node-based-image-processor/src/NodeBox.cpp:
 
 /usr/include/c++/14/bits/stl_iterator_base_types.h:
 
@@ -1180,26 +1170,6 @@ NodeBasedImageProcessor_autogen/moc_predefs.h:
 
 /usr/include/unistd.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow:
-
-/home/siddharth/node-based-image-processor/include/NodeBox.h:
-
-/home/siddharth/node-based-image-processor/src/ImageInputNode.cpp:
-
-/home/siddharth/node-based-image-processor/src/Graph.cpp:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qpoint.h:
-
-/usr/include/c++/14/ios:
-
-/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
-
-/usr/include/c++/14/cwchar:
-
-/usr/include/c++/14/stdexcept:
-
-/home/siddharth/node-based-image-processor/src/MainWindow.cpp:
-
 /usr/include/c++/14/bits/std_abs.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QXcbGlxIntegrationPlugin.cmake:
@@ -1209,6 +1179,14 @@ NodeBasedImageProcessor_autogen/moc_predefs.h:
 /home/siddharth/node-based-image-processor/include/Graph.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
+
+/usr/include/c++/14/bits/std_mutex.h:
+
+/usr/include/c++/14/bits/stl_multimap.h:
+
+/home/siddharth/node-based-image-processor/src/BrightnessContrastNode.cpp:
+
+/usr/include/c++/14/bits/ranges_algobase.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ConfigVersion.cmake:
 
@@ -1224,7 +1202,23 @@ NodeBasedImageProcessor_autogen/moc_predefs.h:
 
 /usr/include/c++/14/bits/atomic_base.h:
 
+/usr/share/cmake-3.30/Modules/Compiler/Compaq-C-DetermineCompiler.cmake:
+
+/usr/include/c++/14/bits/out_ptr.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsScene:
+
+/usr/include/c++/14/bits/nested_exception.h:
+
+/home/siddharth/node-based-image-processor/include/BrightnessContrastNode.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qconfig.h:
+
+/usr/include/x86_64-linux-gnu/bits/time.h:
+
 CMakeFiles/3.30.3/CMakeCXXCompiler.cmake:
+
+/usr/include/c++/14/array:
 
 /usr/include/c++/14/bits/stl_iterator_base_funcs.h:
 
@@ -1243,6 +1237,22 @@ CMakeFiles/3.30.3/CMakeCXXCompiler.cmake:
 /usr/include/c++/14/numbers:
 
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/sched.h:
+
+/usr/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake:
+
+/usr/include/x86_64-linux-gnu/asm/errno.h:
+
+/usr/include/c++/14/bits/cxxabi_forced.h:
+
+/home/siddharth/node-based-image-processor/src/NodeBox.cpp:
+
+/usr/share/cmake-3.30/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake:
+
+/usr/include/c++/14/bits/alloc_traits.h:
 
 /usr/include/c++/14/bits/allocated_ptr.h:
 
@@ -1294,12 +1304,6 @@ CMakeFiles/3.30.3/CMakeCXXCompiler.cmake:
 
 /usr/include/c++/14/bits/cxxabi_init_exception.h:
 
-CMakeFiles/3.30.3/CMakeSystem.cmake:
-
-/usr/include/x86_64-linux-gnu/bits/syscall.h:
-
-/usr/include/c++/14/string_view:
-
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qaction.h:
 
 /usr/include/c++/14/limits:
@@ -1308,9 +1312,9 @@ CMakeFiles/3.30.3/CMakeSystem.cmake:
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
-/usr/include/c++/14/iterator:
-
 /usr/include/c++/14/bits/unique_ptr.h:
+
+/usr/include/c++/14/iterator:
 
 /usr/include/c++/14/bits/move_only_function.h:
 
@@ -1327,6 +1331,12 @@ CMakeFiles/3.30.3/CMakeSystem.cmake:
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
 /usr/include/c++/14/bits/list.tcc:
+
+CMakeFiles/3.30.3/CMakeSystem.cmake:
+
+/usr/include/c++/14/string_view:
+
+/usr/include/x86_64-linux-gnu/bits/syscall.h:
 
 /usr/include/c++/14/climits:
 
@@ -1484,10 +1494,6 @@ CMakeFiles/3.30.3/CMakeSystem.cmake:
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qconfig.h:
-
-/usr/include/x86_64-linux-gnu/bits/time.h:
-
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpalette.h:
@@ -1521,6 +1527,10 @@ CMakeFiles/3.30.3/CMakeSystem.cmake:
 /usr/include/asm-generic/errno.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
+
+/usr/include/x86_64-linux-gnu/c++/14/bits/gthr.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
@@ -1561,7 +1571,3 @@ CMakeFiles/3.30.3/CMakeSystem.cmake:
 /usr/include/c++/14/clocale:
 
 /usr/include/x86_64-linux-gnu/c++/14/bits/ctype_inline.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
-
-/usr/include/x86_64-linux-gnu/c++/14/bits/gthr.h:

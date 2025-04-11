@@ -1,7 +1,7 @@
 #include "MainWindow.h"
-#include "MainWindow.h"
 #include "NodeBox.h"
 #include "ImageInputNode.h"
+#include "BrightnessContrastNode.h"
 
 #include <QMenuBar>
 #include <QMenu>
@@ -14,6 +14,7 @@
 #include <QAction>
 #include <QPushButton>
 #include <QFileDialog>
+#include <QSlider>
 
 MainWindow::MainWindow(QWidget* parent)
     : QMainWindow(parent)
@@ -36,15 +37,29 @@ MainWindow::MainWindow(QWidget* parent)
 
     // Menu bar
     QMenu* addMenu = menuBar()->addMenu("Add");
+
+    // Add ImageInputNode
     m_addNodeAction = new QAction("New Node", this);
     addMenu->addAction(m_addNodeAction);
 
-    // Connect action to create ImageInputNode
+    // Add Brightness/Contrast Node
+    QAction* addBCNode = new QAction("Brightness/Contrast Node", this);
+    addMenu->addAction(addBCNode);
+
+    // ImageInputNode spawn
     connect(m_addNodeAction, &QAction::triggered, this, [this]() {
         ImageInputNode* newNode = new ImageInputNode();
-        newNode->setPos(qrand() % 400, qrand() % 300); // random position
+        newNode->setPos(qrand() % 400, qrand() % 300);
         scene->addItem(newNode);
         connect(newNode, &NodeBox::nodeSelected, this, &MainWindow::onNodeSelected);
+    });
+
+    // Brightness/Contrast Node spawn
+    connect(addBCNode, &QAction::triggered, this, [this]() {
+        BrightnessContrastNode* bcNode = new BrightnessContrastNode();
+        bcNode->setPos(qrand() % 400, qrand() % 300);
+        scene->addItem(bcNode);
+        connect(bcNode, &NodeBox::nodeSelected, this, &MainWindow::onNodeSelected);
     });
 
     setWindowTitle("Node-Based Image Processor");
@@ -55,6 +70,7 @@ void MainWindow::onNodeSelected(NodeBox* node) {
     QWidget* propsWidget = new QWidget();
     QVBoxLayout* layout = new QVBoxLayout(propsWidget);
 
+    // IMAGE INPUT NODE
     if (auto* imgNode = dynamic_cast<ImageInputNode*>(node)) {
         QLabel* metaLabel = new QLabel("No image loaded", propsWidget);
         QPushButton* loadBtn = new QPushButton("Load Image", propsWidget);
@@ -69,7 +85,44 @@ void MainWindow::onNodeSelected(NodeBox* node) {
                 metaLabel->setText(imgNode->getMetadata());
             }
         });
-    } else {
+    }
+
+    // BRIGHTNESS/CONTRAST NODE
+    else if (auto* bcNode = dynamic_cast<BrightnessContrastNode*>(node)) {
+        layout->addWidget(new QLabel("Brightness (-100 to 100)", propsWidget));
+        QSlider* brightSlider = new QSlider(Qt::Horizontal, propsWidget);
+        brightSlider->setRange(-100, 100);
+        brightSlider->setValue(0);
+        layout->addWidget(brightSlider);
+
+        QPushButton* resetB = new QPushButton("Reset Brightness", propsWidget);
+        layout->addWidget(resetB);
+
+        layout->addWidget(new QLabel("Contrast (0.0 to 3.0)", propsWidget));
+        QSlider* contrastSlider = new QSlider(Qt::Horizontal, propsWidget);
+        contrastSlider->setRange(0, 300);  // 0.0 to 3.0
+        contrastSlider->setValue(100);     // default = 1.0
+        layout->addWidget(contrastSlider);
+
+        QPushButton* resetC = new QPushButton("Reset Contrast", propsWidget);
+        layout->addWidget(resetC);
+
+        connect(brightSlider, &QSlider::valueChanged, bcNode, &BrightnessContrastNode::setBrightness);
+        connect(contrastSlider, &QSlider::valueChanged, this, [bcNode](int val) {
+            bcNode->setContrast(val / 100.0);
+        });
+
+        connect(resetB, &QPushButton::clicked, this, [brightSlider]() {
+            brightSlider->setValue(0);
+        });
+
+        connect(resetC, &QPushButton::clicked, this, [contrastSlider]() {
+            contrastSlider->setValue(100);
+        });
+    }
+
+    // Default
+    else {
         layout->addWidget(new QLabel("Selected: Node", propsWidget));
     }
 
@@ -77,4 +130,3 @@ void MainWindow::onNodeSelected(NodeBox* node) {
 }
 
 MainWindow::~MainWindow() = default;
-

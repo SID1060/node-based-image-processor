@@ -4,11 +4,13 @@ NodeBasedImageProcessor_autogen/timestamp: \
 	/home/siddharth/node-based-image-processor/build/CMakeFiles/3.30.3/CMakeCXXCompiler.cmake \
 	/home/siddharth/node-based-image-processor/build/CMakeFiles/3.30.3/CMakeSystem.cmake \
 	/home/siddharth/node-based-image-processor/build/NodeBasedImageProcessor_autogen/moc_predefs.h \
+	/home/siddharth/node-based-image-processor/include/BrightnessContrastNode.h \
 	/home/siddharth/node-based-image-processor/include/Graph.h \
 	/home/siddharth/node-based-image-processor/include/ImageInputNode.h \
 	/home/siddharth/node-based-image-processor/include/MainWindow.h \
 	/home/siddharth/node-based-image-processor/include/Node.h \
 	/home/siddharth/node-based-image-processor/include/NodeBox.h \
+	/home/siddharth/node-based-image-processor/src/BrightnessContrastNode.cpp \
 	/home/siddharth/node-based-image-processor/src/Graph.cpp \
 	/home/siddharth/node-based-image-processor/src/ImageInputNode.cpp \
 	/home/siddharth/node-based-image-processor/src/MainWindow.cpp \

@@ -87,6 +87,12 @@
 	"HEADERS" : 
 	[
 		[
+			"/home/siddharth/node-based-image-processor/include/BrightnessContrastNode.h",
+			"Mu",
+			"6YEA5652QU/moc_BrightnessContrastNode.cpp",
+			null
+		],
+		[
 			"/home/siddharth/node-based-image-processor/include/Graph.h",
 			"Mu",
 			"6YEA5652QU/moc_Graph.cpp",
@@ -172,6 +178,11 @@
 	"SETTINGS_FILE" : "/home/siddharth/node-based-image-processor/build/CMakeFiles/NodeBasedImageProcessor_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[
+			"/home/siddharth/node-based-image-processor/src/BrightnessContrastNode.cpp",
+			"Mu",
+			null
+		],
 		[
 			"/home/siddharth/node-based-image-processor/src/Graph.cpp",
 			"Mu",

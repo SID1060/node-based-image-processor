@@ -1,7 +1,7 @@
 CMakeFiles/NodeBasedImageProcessor.dir/NodeBasedImageProcessor_autogen/mocs_compilation.cpp.o: \
  /home/siddharth/node-based-image-processor/build/NodeBasedImageProcessor_autogen/mocs_compilation.cpp \
  /usr/include/stdc-predef.h \
- /home/siddharth/node-based-image-processor/build/NodeBasedImageProcessor_autogen/6YEA5652QU/moc_ImageInputNode.cpp \
+ /home/siddharth/node-based-image-processor/build/NodeBasedImageProcessor_autogen/6YEA5652QU/moc_BrightnessContrastNode.cpp \
  /usr/include/c++/14/memory /usr/include/c++/14/bits/memoryfwd.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/os_defines.h \
@@ -116,7 +116,7 @@ CMakeFiles/NodeBasedImageProcessor.dir/NodeBasedImageProcessor_autogen/mocs_comp
  /usr/include/c++/14/backward/auto_ptr.h \
  /usr/include/c++/14/pstl/glue_memory_defs.h \
  /usr/include/c++/14/pstl/execution_defs.h \
- /home/siddharth/node-based-image-processor/build/NodeBasedImageProcessor_autogen/6YEA5652QU/../../../include/ImageInputNode.h \
+ /home/siddharth/node-based-image-processor/build/NodeBasedImageProcessor_autogen/6YEA5652QU/../../../include/BrightnessContrastNode.h \
  /home/siddharth/node-based-image-processor/build/NodeBasedImageProcessor_autogen/6YEA5652QU/../../../include/NodeBox.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsItem \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgraphicsitem.h \
@@ -289,6 +289,8 @@ CMakeFiles/NodeBasedImageProcessor.dir/NodeBasedImageProcessor_autogen/mocs_comp
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QImage \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qimage.h \
+ /home/siddharth/node-based-image-processor/build/NodeBasedImageProcessor_autogen/6YEA5652QU/moc_ImageInputNode.cpp \
+ /home/siddharth/node-based-image-processor/build/NodeBasedImageProcessor_autogen/6YEA5652QU/../../../include/ImageInputNode.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
  /home/siddharth/node-based-image-processor/build/NodeBasedImageProcessor_autogen/6YEA5652QU/moc_MainWindow.cpp \

@@ -179,6 +179,30 @@ NodeBasedImageProcessor_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/NodeBasedImageProcessor_autogen/mocs_compilation.cpp.s
 .PHONY : NodeBasedImageProcessor_autogen/mocs_compilation.cpp.s
 
+src/BrightnessContrastNode.o: src/BrightnessContrastNode.cpp.o
+.PHONY : src/BrightnessContrastNode.o
+
+# target to build an object file
+src/BrightnessContrastNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/BrightnessContrastNode.cpp.o
+.PHONY : src/BrightnessContrastNode.cpp.o
+
+src/BrightnessContrastNode.i: src/BrightnessContrastNode.cpp.i
+.PHONY : src/BrightnessContrastNode.i
+
+# target to preprocess a source file
+src/BrightnessContrastNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/BrightnessContrastNode.cpp.i
+.PHONY : src/BrightnessContrastNode.cpp.i
+
+src/BrightnessContrastNode.s: src/BrightnessContrastNode.cpp.s
+.PHONY : src/BrightnessContrastNode.s
+
+# target to generate assembly for a file
+src/BrightnessContrastNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/BrightnessContrastNode.cpp.s
+.PHONY : src/BrightnessContrastNode.cpp.s
+
 src/Graph.o: src/Graph.cpp.o
 .PHONY : src/Graph.o
 
@@ -337,6 +361,9 @@ help:
 	@echo "... NodeBasedImageProcessor_autogen/mocs_compilation.o"
 	@echo "... NodeBasedImageProcessor_autogen/mocs_compilation.i"
 	@echo "... NodeBasedImageProcessor_autogen/mocs_compilation.s"
+	@echo "... src/BrightnessContrastNode.o"
+	@echo "... src/BrightnessContrastNode.i"
+	@echo "... src/BrightnessContrastNode.s"
 	@echo "... src/Graph.o"
 	@echo "... src/Graph.i"
 	@echo "... src/Graph.s"
