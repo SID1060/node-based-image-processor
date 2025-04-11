@@ -1,0 +1,34 @@
+#include "Connection.h"
+#include "NodeBox.h"
+
+## ✅ Rebuild
+
+```bash
+cd ~/node-based-image-processor/build
+cmake ..
+make
+./NodeBasedImageProcessor
+```
+
+---
+
+Try connecting two nodes again with **right-click + drag + release** — a cyan line should now appear!
+
+Let me know if it's working and we’ll wire up **image data flow** next!
+Connection::Connection(NodeBox* fromNode, NodeBox* toNode)
+    : from(fromNode), to(toNode)
+{
+    setZValue(-1); // behind nodes
+    setPen(QPen(Qt::cyan, 2)); // visible line
+    updatePosition();
+}
+
+void Connection::updatePosition() {
+    if (!from || !to) return;
+    QPointF start = from->sceneBoundingRect().center();
+    QPointF end = to->sceneBoundingRect().center();
+    setLine(QLineF(start, end));
+}
+
+NodeBox* Connection::getFromNode() const { return from; }
+NodeBox* Connection::getToNode() const { return to; }

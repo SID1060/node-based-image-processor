@@ -289,6 +289,8 @@ CMakeFiles/NodeBasedImageProcessor.dir/NodeBasedImageProcessor_autogen/mocs_comp
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QImage \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qimage.h \
+ /home/siddharth/node-based-image-processor/build/NodeBasedImageProcessor_autogen/6YEA5652QU/moc_ColorSplitterNode.cpp \
+ /home/siddharth/node-based-image-processor/build/NodeBasedImageProcessor_autogen/6YEA5652QU/../../../include/ColorSplitterNode.h \
  /home/siddharth/node-based-image-processor/build/NodeBasedImageProcessor_autogen/6YEA5652QU/moc_ImageInputNode.cpp \
  /home/siddharth/node-based-image-processor/build/NodeBasedImageProcessor_autogen/6YEA5652QU/../../../include/ImageInputNode.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
@@ -325,4 +327,6 @@ CMakeFiles/NodeBasedImageProcessor.dir/NodeBasedImageProcessor_autogen/mocs_comp
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qaction.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qactiongroup.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qaction.h \
- /home/siddharth/node-based-image-processor/build/NodeBasedImageProcessor_autogen/6YEA5652QU/moc_NodeBox.cpp
+ /home/siddharth/node-based-image-processor/build/NodeBasedImageProcessor_autogen/6YEA5652QU/moc_NodeBox.cpp \
+ /home/siddharth/node-based-image-processor/build/NodeBasedImageProcessor_autogen/6YEA5652QU/moc_OutputNode.cpp \
+ /home/siddharth/node-based-image-processor/build/NodeBasedImageProcessor_autogen/6YEA5652QU/../../../include/OutputNode.h

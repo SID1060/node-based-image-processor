@@ -2,6 +2,8 @@
 #include "NodeBox.h"
 #include "ImageInputNode.h"
 #include "BrightnessContrastNode.h"
+#include "OutputNode.h"
+#include "ColorSplitterNode.h"
 
 #include <QMenuBar>
 #include <QMenu>
@@ -21,7 +23,7 @@ MainWindow::MainWindow(QWidget* parent)
 {
     // Create scene
     scene = new QGraphicsScene(this);
-    
+
     // Create view
     m_canvasView = new QGraphicsView(scene, this);
     setCentralWidget(m_canvasView);
@@ -38,17 +40,20 @@ MainWindow::MainWindow(QWidget* parent)
     // Menu bar
     QMenu* addMenu = menuBar()->addMenu("Add");
 
-    // Add ImageInputNode
+    // Add node actions
     m_addNodeAction = new QAction("New Node", this);
-    addMenu->addAction(m_addNodeAction);
-
-    // Add Brightness/Contrast Node
     QAction* addBCNode = new QAction("Brightness/Contrast Node", this);
+    QAction* addOutputNode = new QAction("Output Node", this);
+
+    addMenu->addAction(m_addNodeAction);
     addMenu->addAction(addBCNode);
+    addMenu->addAction(addOutputNode);
+    QAction* addColorSplitNode = new QAction("Color Splitter Node", this);
+    addMenu->addAction(addColorSplitNode);
 
     // ImageInputNode spawn
     connect(m_addNodeAction, &QAction::triggered, this, [this]() {
-        lastInputNode = new ImageInputNode();                    // store pointer to last image node
+        lastInputNode = new ImageInputNode(); // store pointer to last image node
         ImageInputNode* newNode = lastInputNode;
         newNode->setPos(qrand() % 400, qrand() % 300);
         scene->addItem(newNode);
@@ -60,13 +65,27 @@ MainWindow::MainWindow(QWidget* parent)
         BrightnessContrastNode* bcNode = new BrightnessContrastNode();
         bcNode->setPos(qrand() % 400, qrand() % 300);
 
-        // ✅ pass image from input node to brightness node
+        // pass image from input node to brightness node
         if (lastInputNode)
             bcNode->setInputImage(lastInputNode->getImage());
 
         scene->addItem(bcNode);
         connect(bcNode, &NodeBox::nodeSelected, this, &MainWindow::onNodeSelected);
     });
+
+    // Output Node spawn
+    connect(addOutputNode, &QAction::triggered, this, [this]() {
+        OutputNode* node = new OutputNode();
+        node->setPos(qrand() % 400, qrand() % 300);
+        scene->addItem(node);
+        connect(node, &NodeBox::nodeSelected, this, &MainWindow::onNodeSelected);
+    });
+    connect(addColorSplitNode, &QAction::triggered, this, [this]() {
+    ColorSplitterNode* node = new ColorSplitterNode();
+    node->setPos(qrand() % 400, qrand() % 300);
+    scene->addItem(node);
+    connect(node, &NodeBox::nodeSelected, this, &MainWindow::onNodeSelected);
+});
 
     setWindowTitle("Node-Based Image Processor");
     resize(1200, 800);
@@ -106,8 +125,8 @@ void MainWindow::onNodeSelected(NodeBox* node) {
 
         layout->addWidget(new QLabel("Contrast (0.0 to 3.0)", propsWidget));
         QSlider* contrastSlider = new QSlider(Qt::Horizontal, propsWidget);
-        contrastSlider->setRange(0, 300);  // 0.0 to 3.0
-        contrastSlider->setValue(100);     // default = 1.0
+        contrastSlider->setRange(0, 300);
+        contrastSlider->setValue(100);
         layout->addWidget(contrastSlider);
 
         QPushButton* resetC = new QPushButton("Reset Contrast", propsWidget);

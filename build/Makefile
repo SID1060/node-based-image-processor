@@ -203,6 +203,54 @@ src/BrightnessContrastNode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/BrightnessContrastNode.cpp.s
 .PHONY : src/BrightnessContrastNode.cpp.s
 
+src/ColorSplitterNode.o: src/ColorSplitterNode.cpp.o
+.PHONY : src/ColorSplitterNode.o
+
+# target to build an object file
+src/ColorSplitterNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/ColorSplitterNode.cpp.o
+.PHONY : src/ColorSplitterNode.cpp.o
+
+src/ColorSplitterNode.i: src/ColorSplitterNode.cpp.i
+.PHONY : src/ColorSplitterNode.i
+
+# target to preprocess a source file
+src/ColorSplitterNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/ColorSplitterNode.cpp.i
+.PHONY : src/ColorSplitterNode.cpp.i
+
+src/ColorSplitterNode.s: src/ColorSplitterNode.cpp.s
+.PHONY : src/ColorSplitterNode.s
+
+# target to generate assembly for a file
+src/ColorSplitterNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/ColorSplitterNode.cpp.s
+.PHONY : src/ColorSplitterNode.cpp.s
+
+src/Connection.o: src/Connection.cpp.o
+.PHONY : src/Connection.o
+
+# target to build an object file
+src/Connection.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/Connection.cpp.o
+.PHONY : src/Connection.cpp.o
+
+src/Connection.i: src/Connection.cpp.i
+.PHONY : src/Connection.i
+
+# target to preprocess a source file
+src/Connection.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/Connection.cpp.i
+.PHONY : src/Connection.cpp.i
+
+src/Connection.s: src/Connection.cpp.s
+.PHONY : src/Connection.s
+
+# target to generate assembly for a file
+src/Connection.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/Connection.cpp.s
+.PHONY : src/Connection.cpp.s
+
 src/Graph.o: src/Graph.cpp.o
 .PHONY : src/Graph.o
 
@@ -323,6 +371,30 @@ src/NodeBox.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/NodeBox.cpp.s
 .PHONY : src/NodeBox.cpp.s
 
+src/OutputNode.o: src/OutputNode.cpp.o
+.PHONY : src/OutputNode.o
+
+# target to build an object file
+src/OutputNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/OutputNode.cpp.o
+.PHONY : src/OutputNode.cpp.o
+
+src/OutputNode.i: src/OutputNode.cpp.i
+.PHONY : src/OutputNode.i
+
+# target to preprocess a source file
+src/OutputNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/OutputNode.cpp.i
+.PHONY : src/OutputNode.cpp.i
+
+src/OutputNode.s: src/OutputNode.cpp.s
+.PHONY : src/OutputNode.s
+
+# target to generate assembly for a file
+src/OutputNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/OutputNode.cpp.s
+.PHONY : src/OutputNode.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -364,6 +436,12 @@ help:
 	@echo "... src/BrightnessContrastNode.o"
 	@echo "... src/BrightnessContrastNode.i"
 	@echo "... src/BrightnessContrastNode.s"
+	@echo "... src/ColorSplitterNode.o"
+	@echo "... src/ColorSplitterNode.i"
+	@echo "... src/ColorSplitterNode.s"
+	@echo "... src/Connection.o"
+	@echo "... src/Connection.i"
+	@echo "... src/Connection.s"
 	@echo "... src/Graph.o"
 	@echo "... src/Graph.i"
 	@echo "... src/Graph.s"
@@ -379,6 +457,9 @@ help:
 	@echo "... src/NodeBox.o"
 	@echo "... src/NodeBox.i"
 	@echo "... src/NodeBox.s"
+	@echo "... src/OutputNode.o"
+	@echo "... src/OutputNode.i"
+	@echo "... src/OutputNode.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
