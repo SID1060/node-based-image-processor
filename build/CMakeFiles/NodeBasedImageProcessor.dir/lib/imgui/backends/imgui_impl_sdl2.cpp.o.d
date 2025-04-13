@@ -1,5 +1,5 @@
-CMakeFiles/NodeBasedImageProcessor.dir/src/imgui_impl_sdl2.cpp.o: \
- /home/siddharth/node-based-image-processor/src/imgui_impl_sdl2.cpp \
+CMakeFiles/NodeBasedImageProcessor.dir/lib/imgui/backends/imgui_impl_sdl2.cpp.o: \
+ /home/siddharth/node-based-image-processor/lib/imgui/backends/imgui_impl_sdl2.cpp \
  /usr/include/stdc-predef.h \
  /home/siddharth/node-based-image-processor/lib/imgui/imgui.h \
  /home/siddharth/node-based-image-processor/lib/imgui/imconfig.h \
@@ -17,7 +17,7 @@ CMakeFiles/NodeBasedImageProcessor.dir/src/imgui_impl_sdl2.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/strings.h /usr/include/assert.h \
- /home/siddharth/node-based-image-processor/include/imgui_impl_sdl2.h \
+ /home/siddharth/node-based-image-processor/lib/imgui/backends/imgui_impl_sdl2.h \
  /usr/include/SDL2/SDL.h /usr/include/SDL2/SDL_main.h \
  /usr/include/SDL2/SDL_stdinc.h /usr/include/SDL2/SDL_config.h \
  /usr/include/x86_64-linux-gnu/SDL2/_real_SDL_config.h \

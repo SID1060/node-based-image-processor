@@ -1,5 +1,5 @@
-CMakeFiles/NodeBasedImageProcessor.dir/src/imgui_impl_opengl3.cpp.o: \
- /home/siddharth/node-based-image-processor/src/imgui_impl_opengl3.cpp \
+CMakeFiles/NodeBasedImageProcessor.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.o: \
+ /home/siddharth/node-based-image-processor/lib/imgui/backends/imgui_impl_opengl3.cpp \
  /usr/include/stdc-predef.h \
  /home/siddharth/node-based-image-processor/lib/imgui/imgui.h \
  /home/siddharth/node-based-image-processor/lib/imgui/imconfig.h \
@@ -17,7 +17,7 @@ CMakeFiles/NodeBasedImageProcessor.dir/src/imgui_impl_opengl3.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/strings.h /usr/include/assert.h \
- /home/siddharth/node-based-image-processor/include/imgui_impl_opengl3.h \
+ /home/siddharth/node-based-image-processor/lib/imgui/backends/imgui_impl_opengl3.h \
  /usr/include/stdio.h /usr/include/x86_64-linux-gnu/bits/types.h \
  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
  /usr/include/x86_64-linux-gnu/bits/time64.h \

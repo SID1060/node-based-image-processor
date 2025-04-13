@@ -153,6 +153,54 @@ lib/ImGuiFileDialog/ImGuiFileDialog.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/lib/ImGuiFileDialog/ImGuiFileDialog.cpp.s
 .PHONY : lib/ImGuiFileDialog/ImGuiFileDialog.cpp.s
 
+lib/imgui/backends/imgui_impl_opengl3.o: lib/imgui/backends/imgui_impl_opengl3.cpp.o
+.PHONY : lib/imgui/backends/imgui_impl_opengl3.o
+
+# target to build an object file
+lib/imgui/backends/imgui_impl_opengl3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.o
+.PHONY : lib/imgui/backends/imgui_impl_opengl3.cpp.o
+
+lib/imgui/backends/imgui_impl_opengl3.i: lib/imgui/backends/imgui_impl_opengl3.cpp.i
+.PHONY : lib/imgui/backends/imgui_impl_opengl3.i
+
+# target to preprocess a source file
+lib/imgui/backends/imgui_impl_opengl3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.i
+.PHONY : lib/imgui/backends/imgui_impl_opengl3.cpp.i
+
+lib/imgui/backends/imgui_impl_opengl3.s: lib/imgui/backends/imgui_impl_opengl3.cpp.s
+.PHONY : lib/imgui/backends/imgui_impl_opengl3.s
+
+# target to generate assembly for a file
+lib/imgui/backends/imgui_impl_opengl3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.s
+.PHONY : lib/imgui/backends/imgui_impl_opengl3.cpp.s
+
+lib/imgui/backends/imgui_impl_sdl2.o: lib/imgui/backends/imgui_impl_sdl2.cpp.o
+.PHONY : lib/imgui/backends/imgui_impl_sdl2.o
+
+# target to build an object file
+lib/imgui/backends/imgui_impl_sdl2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/lib/imgui/backends/imgui_impl_sdl2.cpp.o
+.PHONY : lib/imgui/backends/imgui_impl_sdl2.cpp.o
+
+lib/imgui/backends/imgui_impl_sdl2.i: lib/imgui/backends/imgui_impl_sdl2.cpp.i
+.PHONY : lib/imgui/backends/imgui_impl_sdl2.i
+
+# target to preprocess a source file
+lib/imgui/backends/imgui_impl_sdl2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/lib/imgui/backends/imgui_impl_sdl2.cpp.i
+.PHONY : lib/imgui/backends/imgui_impl_sdl2.cpp.i
+
+lib/imgui/backends/imgui_impl_sdl2.s: lib/imgui/backends/imgui_impl_sdl2.cpp.s
+.PHONY : lib/imgui/backends/imgui_impl_sdl2.s
+
+# target to generate assembly for a file
+lib/imgui/backends/imgui_impl_sdl2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/lib/imgui/backends/imgui_impl_sdl2.cpp.s
+.PHONY : lib/imgui/backends/imgui_impl_sdl2.cpp.s
+
 lib/imgui/imgui.o: lib/imgui/imgui.cpp.o
 .PHONY : lib/imgui/imgui.o
 
@@ -417,54 +465,6 @@ src/OutputNode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/OutputNode.cpp.s
 .PHONY : src/OutputNode.cpp.s
 
-src/imgui_impl_opengl3.o: src/imgui_impl_opengl3.cpp.o
-.PHONY : src/imgui_impl_opengl3.o
-
-# target to build an object file
-src/imgui_impl_opengl3.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/imgui_impl_opengl3.cpp.o
-.PHONY : src/imgui_impl_opengl3.cpp.o
-
-src/imgui_impl_opengl3.i: src/imgui_impl_opengl3.cpp.i
-.PHONY : src/imgui_impl_opengl3.i
-
-# target to preprocess a source file
-src/imgui_impl_opengl3.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/imgui_impl_opengl3.cpp.i
-.PHONY : src/imgui_impl_opengl3.cpp.i
-
-src/imgui_impl_opengl3.s: src/imgui_impl_opengl3.cpp.s
-.PHONY : src/imgui_impl_opengl3.s
-
-# target to generate assembly for a file
-src/imgui_impl_opengl3.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/imgui_impl_opengl3.cpp.s
-.PHONY : src/imgui_impl_opengl3.cpp.s
-
-src/imgui_impl_sdl2.o: src/imgui_impl_sdl2.cpp.o
-.PHONY : src/imgui_impl_sdl2.o
-
-# target to build an object file
-src/imgui_impl_sdl2.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/imgui_impl_sdl2.cpp.o
-.PHONY : src/imgui_impl_sdl2.cpp.o
-
-src/imgui_impl_sdl2.i: src/imgui_impl_sdl2.cpp.i
-.PHONY : src/imgui_impl_sdl2.i
-
-# target to preprocess a source file
-src/imgui_impl_sdl2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/imgui_impl_sdl2.cpp.i
-.PHONY : src/imgui_impl_sdl2.cpp.i
-
-src/imgui_impl_sdl2.s: src/imgui_impl_sdl2.cpp.s
-.PHONY : src/imgui_impl_sdl2.s
-
-# target to generate assembly for a file
-src/imgui_impl_sdl2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/imgui_impl_sdl2.cpp.s
-.PHONY : src/imgui_impl_sdl2.cpp.s
-
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -501,6 +501,12 @@ help:
 	@echo "... lib/ImGuiFileDialog/ImGuiFileDialog.o"
 	@echo "... lib/ImGuiFileDialog/ImGuiFileDialog.i"
 	@echo "... lib/ImGuiFileDialog/ImGuiFileDialog.s"
+	@echo "... lib/imgui/backends/imgui_impl_opengl3.o"
+	@echo "... lib/imgui/backends/imgui_impl_opengl3.i"
+	@echo "... lib/imgui/backends/imgui_impl_opengl3.s"
+	@echo "... lib/imgui/backends/imgui_impl_sdl2.o"
+	@echo "... lib/imgui/backends/imgui_impl_sdl2.i"
+	@echo "... lib/imgui/backends/imgui_impl_sdl2.s"
 	@echo "... lib/imgui/imgui.o"
 	@echo "... lib/imgui/imgui.i"
 	@echo "... lib/imgui/imgui.s"
@@ -534,12 +540,6 @@ help:
 	@echo "... src/OutputNode.o"
 	@echo "... src/OutputNode.i"
 	@echo "... src/OutputNode.s"
-	@echo "... src/imgui_impl_opengl3.o"
-	@echo "... src/imgui_impl_opengl3.i"
-	@echo "... src/imgui_impl_opengl3.s"
-	@echo "... src/imgui_impl_sdl2.o"
-	@echo "... src/imgui_impl_sdl2.i"
-	@echo "... src/imgui_impl_sdl2.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

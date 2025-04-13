@@ -5,13 +5,13 @@
 # compile CXX with /usr/bin/c++
 C_DEFINES = -DIMGUI_DEFINE_MATH_OPERATORS
 
-C_INCLUDES = -I/home/siddharth/node-based-image-processor/include -I/home/siddharth/node-based-image-processor/src -I/home/siddharth/node-based-image-processor/lib/imgui -I/home/siddharth/node-based-image-processor/lib/imgui/backends -I/home/siddharth/node-based-image-processor/lib/imnodes -I/home/siddharth/node-based-image-processor/lib/ImGuiFileDialog -I/home/siddharth/node-based-image-processor/lib -isystem /usr/include/opencv4 -isystem /usr/include/SDL2
+C_INCLUDES = -I/home/siddharth/node-based-image-processor/include -I/home/siddharth/node-based-image-processor/src -I/home/siddharth/node-based-image-processor/lib/imgui -I/home/siddharth/node-based-image-processor/lib/imgui/backends -I/home/siddharth/node-based-image-processor/lib/imnodes -I/home/siddharth/node-based-image-processor/lib/ImGuiFileDialog -I/home/siddharth/node-based-image-processor/lib -isystem /usr/include/SDL2 -isystem /usr/include/opencv4
 
 C_FLAGS = 
 
 CXX_DEFINES = -DIMGUI_DEFINE_MATH_OPERATORS
 
-CXX_INCLUDES = -I/home/siddharth/node-based-image-processor/include -I/home/siddharth/node-based-image-processor/src -I/home/siddharth/node-based-image-processor/lib/imgui -I/home/siddharth/node-based-image-processor/lib/imgui/backends -I/home/siddharth/node-based-image-processor/lib/imnodes -I/home/siddharth/node-based-image-processor/lib/ImGuiFileDialog -I/home/siddharth/node-based-image-processor/lib -isystem /usr/include/opencv4 -isystem /usr/include/SDL2
+CXX_INCLUDES = -I/home/siddharth/node-based-image-processor/include -I/home/siddharth/node-based-image-processor/src -I/home/siddharth/node-based-image-processor/lib/imgui -I/home/siddharth/node-based-image-processor/lib/imgui/backends -I/home/siddharth/node-based-image-processor/lib/imnodes -I/home/siddharth/node-based-image-processor/lib/ImGuiFileDialog -I/home/siddharth/node-based-image-processor/lib -isystem /usr/include/SDL2 -isystem /usr/include/opencv4
 
 CXX_FLAGS = -std=gnu++17
 

@@ -52,6 +52,7 @@
 #include <imgui.h>
 #include <imnodes.h>
 #include <stdio.h>
+#include <opencv2/opencv.hpp> // for cv::Mat
 
 NodeEditor::NodeEditor()
     : nextNodeId_(1)
@@ -72,21 +73,43 @@ void NodeEditor::Render() {
     // --- Node editor canvas ---
     ImNodes::BeginNodeEditor();
 
-    // 1) Render all nodes
-    for (auto& in : inputNodes_)   in->Render();
+    // Render nodes
+    for (auto& in  : inputNodes_)  in->Render();
     for (auto& out : outputNodes_) out->Render();
 
-    // 2) Render existing links
+    // Draw existing links
     for (auto& link : links_) {
         ImNodes::Link(link.id, link.start_attr, link.end_attr);
     }
 
     ImNodes::EndNodeEditor();
 
-    // --- Now, outside the editor scope, handle new links ---
+    // --- Handle new link creation (must be *after* EndNodeEditor) ---
     int start_attr, end_attr;
     if (ImNodes::IsLinkCreated(&start_attr, &end_attr)) {
+        printf("Debug: Link created attrs %d -> %d\n", start_attr, end_attr);
         links_.push_back({ nextLinkId_++, start_attr, end_attr });
-        printf("Debug: Link created from %d to %d\n", start_attr, end_attr);
+
+        int startNodeId = start_attr / 10;
+        int endNodeId   = end_attr   / 10;
+        printf("Debug: Link maps node %d -> node %d\n", startNodeId, endNodeId);
+
+        cv::Mat img;
+        for (auto& in : inputNodes_) {
+            if (in->GetId() == startNodeId) {
+                img = in->GetImage();
+                printf("Debug: Found input node %d, img size %dx%d\n",
+                       startNodeId, img.cols, img.rows);
+                break;
+            }
+        }
+        for (auto& out : outputNodes_) {
+            if (out->GetId() == endNodeId) {
+                printf("Debug: Setting image on output node %d\n", endNodeId);
+                out->SetInputImage(img);
+                break;
+            }
+        }
     }
+
 }
