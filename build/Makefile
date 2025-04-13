@@ -129,6 +129,30 @@ NodeBasedImageProcessor/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/build
 .PHONY : NodeBasedImageProcessor/fast
 
+lib/ImGuiFileDialog/ImGuiFileDialog.o: lib/ImGuiFileDialog/ImGuiFileDialog.cpp.o
+.PHONY : lib/ImGuiFileDialog/ImGuiFileDialog.o
+
+# target to build an object file
+lib/ImGuiFileDialog/ImGuiFileDialog.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/lib/ImGuiFileDialog/ImGuiFileDialog.cpp.o
+.PHONY : lib/ImGuiFileDialog/ImGuiFileDialog.cpp.o
+
+lib/ImGuiFileDialog/ImGuiFileDialog.i: lib/ImGuiFileDialog/ImGuiFileDialog.cpp.i
+.PHONY : lib/ImGuiFileDialog/ImGuiFileDialog.i
+
+# target to preprocess a source file
+lib/ImGuiFileDialog/ImGuiFileDialog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/lib/ImGuiFileDialog/ImGuiFileDialog.cpp.i
+.PHONY : lib/ImGuiFileDialog/ImGuiFileDialog.cpp.i
+
+lib/ImGuiFileDialog/ImGuiFileDialog.s: lib/ImGuiFileDialog/ImGuiFileDialog.cpp.s
+.PHONY : lib/ImGuiFileDialog/ImGuiFileDialog.s
+
+# target to generate assembly for a file
+lib/ImGuiFileDialog/ImGuiFileDialog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/lib/ImGuiFileDialog/ImGuiFileDialog.cpp.s
+.PHONY : lib/ImGuiFileDialog/ImGuiFileDialog.cpp.s
+
 lib/imgui/imgui.o: lib/imgui/imgui.cpp.o
 .PHONY : lib/imgui/imgui.o
 
@@ -273,6 +297,30 @@ lib/tinyfiledialogs.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/lib/tinyfiledialogs.c.s
 .PHONY : lib/tinyfiledialogs.c.s
 
+src/BlendNode.o: src/BlendNode.cpp.o
+.PHONY : src/BlendNode.o
+
+# target to build an object file
+src/BlendNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/BlendNode.cpp.o
+.PHONY : src/BlendNode.cpp.o
+
+src/BlendNode.i: src/BlendNode.cpp.i
+.PHONY : src/BlendNode.i
+
+# target to preprocess a source file
+src/BlendNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/BlendNode.cpp.i
+.PHONY : src/BlendNode.cpp.i
+
+src/BlendNode.s: src/BlendNode.cpp.s
+.PHONY : src/BlendNode.s
+
+# target to generate assembly for a file
+src/BlendNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/BlendNode.cpp.s
+.PHONY : src/BlendNode.cpp.s
+
 src/ImageProcessor.o: src/ImageProcessor.cpp.o
 .PHONY : src/ImageProcessor.o
 
@@ -344,6 +392,30 @@ src/Nodes.s: src/Nodes.cpp.s
 src/Nodes.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/Nodes.cpp.s
 .PHONY : src/Nodes.cpp.s
+
+src/OutputNode.o: src/OutputNode.cpp.o
+.PHONY : src/OutputNode.o
+
+# target to build an object file
+src/OutputNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/OutputNode.cpp.o
+.PHONY : src/OutputNode.cpp.o
+
+src/OutputNode.i: src/OutputNode.cpp.i
+.PHONY : src/OutputNode.i
+
+# target to preprocess a source file
+src/OutputNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/OutputNode.cpp.i
+.PHONY : src/OutputNode.cpp.i
+
+src/OutputNode.s: src/OutputNode.cpp.s
+.PHONY : src/OutputNode.s
+
+# target to generate assembly for a file
+src/OutputNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/OutputNode.cpp.s
+.PHONY : src/OutputNode.cpp.s
 
 src/imgui_impl_opengl3.o: src/imgui_impl_opengl3.cpp.o
 .PHONY : src/imgui_impl_opengl3.o
@@ -426,6 +498,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... NodeBasedImageProcessor"
+	@echo "... lib/ImGuiFileDialog/ImGuiFileDialog.o"
+	@echo "... lib/ImGuiFileDialog/ImGuiFileDialog.i"
+	@echo "... lib/ImGuiFileDialog/ImGuiFileDialog.s"
 	@echo "... lib/imgui/imgui.o"
 	@echo "... lib/imgui/imgui.i"
 	@echo "... lib/imgui/imgui.s"
@@ -444,6 +519,9 @@ help:
 	@echo "... lib/tinyfiledialogs.o"
 	@echo "... lib/tinyfiledialogs.i"
 	@echo "... lib/tinyfiledialogs.s"
+	@echo "... src/BlendNode.o"
+	@echo "... src/BlendNode.i"
+	@echo "... src/BlendNode.s"
 	@echo "... src/ImageProcessor.o"
 	@echo "... src/ImageProcessor.i"
 	@echo "... src/ImageProcessor.s"
@@ -453,6 +531,9 @@ help:
 	@echo "... src/Nodes.o"
 	@echo "... src/Nodes.i"
 	@echo "... src/Nodes.s"
+	@echo "... src/OutputNode.o"
+	@echo "... src/OutputNode.i"
+	@echo "... src/OutputNode.s"
 	@echo "... src/imgui_impl_opengl3.o"
 	@echo "... src/imgui_impl_opengl3.i"
 	@echo "... src/imgui_impl_opengl3.s"

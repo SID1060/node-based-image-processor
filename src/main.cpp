@@ -6,6 +6,7 @@
 #include <SDL.h>
 #include <stdio.h>
 #include "NodeEditor.h"
+#include "ImGuiFileDialog.h"
 
 NodeEditor nodeEditor;
 
@@ -58,10 +59,16 @@ int main(int, char**) {
     ImGuiIO& io = ImGui::GetIO();
     io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;
 
+    ImGui::StyleColorsDark();
+
     ImGui_ImplSDL2_InitForOpenGL(window, gl_context);
     printf("Debug: ImGui SDL2 backend initialized\n");
     ImGui_ImplOpenGL3_Init("#version 330");
     printf("Debug: ImGui OpenGL3 backend initialized\n");
+
+    // // Setup ImGuiFileDialog
+    // IGFD::FileDialog::Instance()->SetExtentionInfos(".png", ImVec4(0,1,0,1));
+    // IGFD::FileDialog::Instance()->SetExtentionInfos(".jpg", ImVec4(1,1,0,1));
 
     bool done = false;
     while (!done) {
@@ -81,11 +88,15 @@ int main(int, char**) {
 
         ImGui::Begin("Node-Based Image Processor");
 
-        ImNodes::BeginNodeEditor();
+        // ImNodes::BeginNodeEditor();
         nodeEditor.Render();
-        ImNodes::EndNodeEditor();
+        // ImNodes::EndNodeEditor();
 
         ImGui::End();
+
+        // File dialog global render (required)
+        // IGFD::FileDialog::Instance()->Display();
+        IGFD::FileDialog::Instance()->Display("ChooseFileDlgKey", ImGuiWindowFlags_NoCollapse, ImVec2(700, 400), ImVec2(0, 0));
 
         ImGui::Render();
         glViewport(0, 0, (int)io.DisplaySize.x, (int)io.DisplaySize.y);

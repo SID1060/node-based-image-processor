@@ -9,14 +9,17 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/siddharth/node-based-image-processor/lib/tinyfiledialogs.c" "CMakeFiles/NodeBasedImageProcessor.dir/lib/tinyfiledialogs.c.o" "gcc" "CMakeFiles/NodeBasedImageProcessor.dir/lib/tinyfiledialogs.c.o.d"
+  "/home/siddharth/node-based-image-processor/lib/ImGuiFileDialog/ImGuiFileDialog.cpp" "CMakeFiles/NodeBasedImageProcessor.dir/lib/ImGuiFileDialog/ImGuiFileDialog.cpp.o" "gcc" "CMakeFiles/NodeBasedImageProcessor.dir/lib/ImGuiFileDialog/ImGuiFileDialog.cpp.o.d"
   "/home/siddharth/node-based-image-processor/lib/imgui/imgui.cpp" "CMakeFiles/NodeBasedImageProcessor.dir/lib/imgui/imgui.cpp.o" "gcc" "CMakeFiles/NodeBasedImageProcessor.dir/lib/imgui/imgui.cpp.o.d"
   "/home/siddharth/node-based-image-processor/lib/imgui/imgui_draw.cpp" "CMakeFiles/NodeBasedImageProcessor.dir/lib/imgui/imgui_draw.cpp.o" "gcc" "CMakeFiles/NodeBasedImageProcessor.dir/lib/imgui/imgui_draw.cpp.o.d"
   "/home/siddharth/node-based-image-processor/lib/imgui/imgui_tables.cpp" "CMakeFiles/NodeBasedImageProcessor.dir/lib/imgui/imgui_tables.cpp.o" "gcc" "CMakeFiles/NodeBasedImageProcessor.dir/lib/imgui/imgui_tables.cpp.o.d"
   "/home/siddharth/node-based-image-processor/lib/imgui/imgui_widgets.cpp" "CMakeFiles/NodeBasedImageProcessor.dir/lib/imgui/imgui_widgets.cpp.o" "gcc" "CMakeFiles/NodeBasedImageProcessor.dir/lib/imgui/imgui_widgets.cpp.o.d"
   "/home/siddharth/node-based-image-processor/lib/imnodes/imnodes.cpp" "CMakeFiles/NodeBasedImageProcessor.dir/lib/imnodes/imnodes.cpp.o" "gcc" "CMakeFiles/NodeBasedImageProcessor.dir/lib/imnodes/imnodes.cpp.o.d"
+  "/home/siddharth/node-based-image-processor/src/BlendNode.cpp" "CMakeFiles/NodeBasedImageProcessor.dir/src/BlendNode.cpp.o" "gcc" "CMakeFiles/NodeBasedImageProcessor.dir/src/BlendNode.cpp.o.d"
   "/home/siddharth/node-based-image-processor/src/ImageProcessor.cpp" "CMakeFiles/NodeBasedImageProcessor.dir/src/ImageProcessor.cpp.o" "gcc" "CMakeFiles/NodeBasedImageProcessor.dir/src/ImageProcessor.cpp.o.d"
   "/home/siddharth/node-based-image-processor/src/NodeEditor.cpp" "CMakeFiles/NodeBasedImageProcessor.dir/src/NodeEditor.cpp.o" "gcc" "CMakeFiles/NodeBasedImageProcessor.dir/src/NodeEditor.cpp.o.d"
   "/home/siddharth/node-based-image-processor/src/Nodes.cpp" "CMakeFiles/NodeBasedImageProcessor.dir/src/Nodes.cpp.o" "gcc" "CMakeFiles/NodeBasedImageProcessor.dir/src/Nodes.cpp.o.d"
+  "/home/siddharth/node-based-image-processor/src/OutputNode.cpp" "CMakeFiles/NodeBasedImageProcessor.dir/src/OutputNode.cpp.o" "gcc" "CMakeFiles/NodeBasedImageProcessor.dir/src/OutputNode.cpp.o.d"
   "/home/siddharth/node-based-image-processor/src/imgui_impl_opengl3.cpp" "CMakeFiles/NodeBasedImageProcessor.dir/src/imgui_impl_opengl3.cpp.o" "gcc" "CMakeFiles/NodeBasedImageProcessor.dir/src/imgui_impl_opengl3.cpp.o.d"
   "/home/siddharth/node-based-image-processor/src/imgui_impl_sdl2.cpp" "CMakeFiles/NodeBasedImageProcessor.dir/src/imgui_impl_sdl2.cpp.o" "gcc" "CMakeFiles/NodeBasedImageProcessor.dir/src/imgui_impl_sdl2.cpp.o.d"
   "/home/siddharth/node-based-image-processor/src/main.cpp" "CMakeFiles/NodeBasedImageProcessor.dir/src/main.cpp.o" "gcc" "CMakeFiles/NodeBasedImageProcessor.dir/src/main.cpp.o.d"
