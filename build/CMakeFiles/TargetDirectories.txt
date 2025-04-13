@@ -1,0 +1,3 @@
+/home/siddharth/node-based-image-processor/build/CMakeFiles/NodeBasedImageProcessor.dir
+/home/siddharth/node-based-image-processor/build/CMakeFiles/edit_cache.dir
+/home/siddharth/node-based-image-processor/build/CMakeFiles/rebuild_cache.dir
