@@ -485,6 +485,7 @@ CMakeFiles/NodeBasedImageProcessor.dir/src/main.cpp.o: \
  /usr/include/opencv4/opencv2/video/tracking.hpp \
  /usr/include/opencv4/opencv2/video/background_segm.hpp \
  /home/siddharth/node-based-image-processor/src/OutputNode.h \
+ /home/siddharth/node-based-image-processor/src/BrightnessContrastNode.h \
  /home/siddharth/node-based-image-processor/lib/ImGuiFileDialog/ImGuiFileDialog.h \
  /home/siddharth/node-based-image-processor/lib/ImGuiFileDialog/ImGuiFileDialogConfig.h \
  /usr/include/c++/14/regex /usr/include/c++/14/bitset \

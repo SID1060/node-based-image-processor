@@ -32,8 +32,9 @@
 #ifndef NODE_EDITOR_H
 #define NODE_EDITOR_H
 
-#include "Nodes.h"         // for ImageInputNode
-#include "OutputNode.h"    // for OutputNode
+#include "Nodes.h"                       // ImageInputNode
+#include "OutputNode.h"
+#include "BrightnessContrastNode.h"
 #include <vector>
 #include <memory>
 
@@ -51,9 +52,14 @@ public:
 private:
     int nextNodeId_;
     int nextLinkId_;
-    std::vector<std::unique_ptr<ImageInputNode>> inputNodes_;
-    std::vector<std::unique_ptr<OutputNode>> outputNodes_;
-    std::vector<Link> links_;
+
+    std::vector<std::unique_ptr<ImageInputNode>>       inputNodes_;
+    std::vector<std::unique_ptr<BrightnessContrastNode>> bcNodes_;
+    std::vector<std::unique_ptr<OutputNode>>           outputNodes_;
+    std::vector<Link>                                  links_;
+
+    void EvaluateGraph();
 };
 
 #endif
+

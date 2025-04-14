@@ -1,8 +1,7 @@
-CMakeFiles/NodeBasedImageProcessor.dir/src/NodeEditor.cpp.o: \
- /home/siddharth/node-based-image-processor/src/NodeEditor.cpp \
+CMakeFiles/NodeBasedImageProcessor.dir/src/BrightnessContrastNode.cpp.o: \
+ /home/siddharth/node-based-image-processor/src/BrightnessContrastNode.cpp \
  /usr/include/stdc-predef.h \
- /home/siddharth/node-based-image-processor/src/NodeEditor.h \
- /home/siddharth/node-based-image-processor/src/Nodes.h \
+ /home/siddharth/node-based-image-processor/src/BrightnessContrastNode.h \
  /usr/include/opencv4/opencv2/opencv.hpp \
  /usr/include/opencv4/opencv2/opencv_modules.hpp \
  /usr/include/opencv4/opencv2/core.hpp \
@@ -354,12 +353,6 @@ CMakeFiles/NodeBasedImageProcessor.dir/src/NodeEditor.cpp.o: \
  /usr/include/opencv4/opencv2/video.hpp \
  /usr/include/opencv4/opencv2/video/tracking.hpp \
  /usr/include/opencv4/opencv2/video/background_segm.hpp \
- /home/siddharth/node-based-image-processor/src/OutputNode.h \
- /usr/include/SDL2/SDL_opengl.h /usr/include/SDL2/SDL_config.h \
- /usr/include/x86_64-linux-gnu/SDL2/_real_SDL_config.h \
- /usr/include/SDL2/SDL_platform.h /usr/include/SDL2/begin_code.h \
- /usr/include/SDL2/close_code.h /usr/include/SDL2/SDL_opengl_glext.h \
- /home/siddharth/node-based-image-processor/src/BrightnessContrastNode.h \
  /home/siddharth/node-based-image-processor/lib/imgui/imgui.h \
  /home/siddharth/node-based-image-processor/lib/imgui/imconfig.h \
  /home/siddharth/node-based-image-processor/lib/imnodes/imnodes.h
