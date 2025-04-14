@@ -114,6 +114,130 @@
 //     }
 
 // }
+// #include "NodeEditor.h"
+// #include <imgui.h>
+// #include <imnodes.h>
+// #include <opencv2/opencv.hpp>
+// #include <map>
+// #include <cstdio>
+
+// NodeEditor::NodeEditor()
+//     : nextNodeId_(1)
+//     , nextLinkId_(1)
+// {}
+
+// void NodeEditor::Render() {
+//     // 1) UI to add nodes
+//     ImGui::Begin("Add Nodes");
+//     if (ImGui::Button("Add Input Node")) {
+//         inputNodes_.push_back(std::make_unique<ImageInputNode>(nextNodeId_++));
+//     }
+//     if (ImGui::Button("Add Brightness/Contrast")) {
+//         bcNodes_.push_back(std::make_unique<BrightnessContrastNode>(nextNodeId_++));
+//     }
+//     if (ImGui::Button("Add Channel Splitter")) {
+//         splitterNodes_.push_back(std::make_unique<ColorChannelSplitterNode>(nextNodeId_++));
+//     }
+//     if (ImGui::Button("Add Output Node")) {
+//         outputNodes_.push_back(std::make_unique<OutputNode>(nextNodeId_++));
+//     }
+//     ImGui::End();
+
+//     // 2) Node editor canvas
+//     ImNodes::BeginNodeEditor();
+
+//     // Render all nodes
+//     for (auto& n : inputNodes_)      n->Render();
+//     for (auto& n : bcNodes_)         n->Render();
+//     for (auto& n : splitterNodes_)   n->Render();
+//     for (auto& n : outputNodes_)     n->Render();
+
+//     // Draw links
+//     for (auto& link : links_) {
+//         ImNodes::Link(link.id, link.start_attr, link.end_attr);
+//     }
+
+//     ImNodes::EndNodeEditor();
+
+//     // 3) Detect new links
+//     int start_attr, end_attr;
+//     if (ImNodes::IsLinkCreated(&start_attr, &end_attr)) {
+//         links_.push_back({ nextLinkId_++, start_attr, end_attr });
+//         printf("Debug: Link created %d→%d\n", start_attr, end_attr);
+//     }
+
+//     // 4) Propagate images through the graph
+//     EvaluateGraph();
+// }
+
+// void NodeEditor::EvaluateGraph() {
+//     std::map<int, cv::Mat> outputs;
+
+//     // 1) Seed with Input nodes
+//     for (auto& in : inputNodes_) {
+//         cv::Mat img = in->GetImage();
+//         if (!img.empty()) {
+//             outputs[in->GetId()] = img;
+//             printf("Debug: Eval seed Input %d size %dx%d\n",
+//                    in->GetId(), img.cols, img.rows);
+//         }
+//     }
+
+//     bool progress = true;
+//     while (progress) {
+//         progress = false;
+
+//         for (auto& link : links_) {
+//             int s = link.start_attr / 10;
+//             int e = link.end_attr   / 10;
+
+//             // Only proceed if we have an output for s, and haven't done e yet
+//             auto it = outputs.find(s);
+//             if (it == outputs.end() || outputs.count(e)) continue;
+
+//             cv::Mat img = it->second;
+
+//             // 2a) Brightness/Contrast node
+//             for (auto& bc : bcNodes_) {
+//                 if (bc->GetId() == e) {
+//                     bc->SetInputImage(img);
+//                     outputs[e] = bc->GetOutputImage();
+//                     printf("Debug: Eval BC %d from %d\n", e, s);
+//                     progress = true;
+//                 }
+//             }
+
+//             // 2b) Channel Splitter node
+//             for (auto& splitter : splitterNodes_) {
+//                 if (splitter->GetId() == e) {
+//                     splitter->SetInputImage(img);
+//                     printf("Debug: Eval Splitter %d from %d\n", e, s);
+//                     progress = true;
+//                 }
+
+//                 // Use channel index from attribute ID
+//                 int outputAttr = link.start_attr;
+//                 int splitterId = outputAttr / 10;
+//                 int channelIndex = outputAttr - splitterId * 10 - 2;
+//                 if (splitter->GetId() == splitterId) {
+//                     outputs[e] = splitter->GetChannelImage(channelIndex);
+//                     printf("Debug: Splitter %d output channel %d → node %d\n", splitterId, channelIndex, e);
+//                 }
+//             }
+
+//             // 2c) Output node
+//             for (auto& out : outputNodes_) {
+//                 if (out->GetId() == e) {
+//                     out->SetInputImage(img);
+//                     outputs[e] = img; // mark as visited
+//                     printf("Debug: Eval Output %d from %d\n", e, s);
+//                     progress = true;
+//                 }
+//             }
+//         }
+//     }
+// }
+
 #include "NodeEditor.h"
 #include <imgui.h>
 #include <imnodes.h>
@@ -138,6 +262,9 @@ void NodeEditor::Render() {
     if (ImGui::Button("Add Channel Splitter")) {
         splitterNodes_.push_back(std::make_unique<ColorChannelSplitterNode>(nextNodeId_++));
     }
+    if (ImGui::Button("Add Blur Node")) {
+        blurNodes_.push_back(std::make_unique<BlurNode>(nextNodeId_++));
+    }
     if (ImGui::Button("Add Output Node")) {
         outputNodes_.push_back(std::make_unique<OutputNode>(nextNodeId_++));
     }
@@ -150,6 +277,7 @@ void NodeEditor::Render() {
     for (auto& n : inputNodes_)      n->Render();
     for (auto& n : bcNodes_)         n->Render();
     for (auto& n : splitterNodes_)   n->Render();
+    for (auto& n : blurNodes_)       n->Render();
     for (auto& n : outputNodes_)     n->Render();
 
     // Draw links
@@ -215,7 +343,6 @@ void NodeEditor::EvaluateGraph() {
                     progress = true;
                 }
 
-                // Use channel index from attribute ID
                 int outputAttr = link.start_attr;
                 int splitterId = outputAttr / 10;
                 int channelIndex = outputAttr - splitterId * 10 - 2;
@@ -225,7 +352,17 @@ void NodeEditor::EvaluateGraph() {
                 }
             }
 
-            // 2c) Output node
+            // 2c) Blur node
+            for (auto& blur : blurNodes_) {
+                if (blur->GetId() == e) {
+                    blur->SetInputImage(img);
+                    outputs[e] = blur->GetOutputImage();
+                    printf("Debug: Eval Blur %d from %d\n", e, s);
+                    progress = true;
+                }
+            }
+
+            // 2d) Output node
             for (auto& out : outputNodes_) {
                 if (out->GetId() == e) {
                     out->SetInputImage(img);

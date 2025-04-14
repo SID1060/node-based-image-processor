@@ -19,6 +19,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/NodeBasedImageProcessor.dir/lib/tinyfiledialogs.c.o.d"
   "CMakeFiles/NodeBasedImageProcessor.dir/src/BlendNode.cpp.o"
   "CMakeFiles/NodeBasedImageProcessor.dir/src/BlendNode.cpp.o.d"
+  "CMakeFiles/NodeBasedImageProcessor.dir/src/BlurNode.cpp.o"
+  "CMakeFiles/NodeBasedImageProcessor.dir/src/BlurNode.cpp.o.d"
   "CMakeFiles/NodeBasedImageProcessor.dir/src/BrightnessContrastNode.cpp.o"
   "CMakeFiles/NodeBasedImageProcessor.dir/src/BrightnessContrastNode.cpp.o.d"
   "CMakeFiles/NodeBasedImageProcessor.dir/src/ColorChannelSplitterNode.cpp.o"
