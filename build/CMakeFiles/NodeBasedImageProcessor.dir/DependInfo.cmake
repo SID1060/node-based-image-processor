@@ -21,6 +21,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/siddharth/node-based-image-processor/src/BlurNode.cpp" "CMakeFiles/NodeBasedImageProcessor.dir/src/BlurNode.cpp.o" "gcc" "CMakeFiles/NodeBasedImageProcessor.dir/src/BlurNode.cpp.o.d"
   "/home/siddharth/node-based-image-processor/src/BrightnessContrastNode.cpp" "CMakeFiles/NodeBasedImageProcessor.dir/src/BrightnessContrastNode.cpp.o" "gcc" "CMakeFiles/NodeBasedImageProcessor.dir/src/BrightnessContrastNode.cpp.o.d"
   "/home/siddharth/node-based-image-processor/src/ColorChannelSplitterNode.cpp" "CMakeFiles/NodeBasedImageProcessor.dir/src/ColorChannelSplitterNode.cpp.o" "gcc" "CMakeFiles/NodeBasedImageProcessor.dir/src/ColorChannelSplitterNode.cpp.o.d"
+  "/home/siddharth/node-based-image-processor/src/EdgeDetectionNode.cpp" "CMakeFiles/NodeBasedImageProcessor.dir/src/EdgeDetectionNode.cpp.o" "gcc" "CMakeFiles/NodeBasedImageProcessor.dir/src/EdgeDetectionNode.cpp.o.d"
   "/home/siddharth/node-based-image-processor/src/ImageProcessor.cpp" "CMakeFiles/NodeBasedImageProcessor.dir/src/ImageProcessor.cpp.o" "gcc" "CMakeFiles/NodeBasedImageProcessor.dir/src/ImageProcessor.cpp.o.d"
   "/home/siddharth/node-based-image-processor/src/NodeEditor.cpp" "CMakeFiles/NodeBasedImageProcessor.dir/src/NodeEditor.cpp.o" "gcc" "CMakeFiles/NodeBasedImageProcessor.dir/src/NodeEditor.cpp.o.d"
   "/home/siddharth/node-based-image-processor/src/Nodes.cpp" "CMakeFiles/NodeBasedImageProcessor.dir/src/Nodes.cpp.o" "gcc" "CMakeFiles/NodeBasedImageProcessor.dir/src/Nodes.cpp.o.d"

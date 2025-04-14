@@ -268,6 +268,9 @@ void NodeEditor::Render() {
     if (ImGui::Button("Add Threshold")) {
         thresholdNodes_.push_back(std::make_unique<ThresholdNode>(nextNodeId_++));
     }
+    if (ImGui::Button("Add Edge Node")) {
+        edgeNodes_.push_back(std::make_unique<EdgeDetectionNode>(nextNodeId_++));
+    }    
     if (ImGui::Button("Add Output Node")) {
         outputNodes_.push_back(std::make_unique<OutputNode>(nextNodeId_++));
     }
@@ -282,6 +285,7 @@ void NodeEditor::Render() {
     for (auto& n : splitterNodes_)   n->Render();
     for (auto& n : blurNodes_)       n->Render();
     for (auto& node : thresholdNodes_) node->Render();
+    for (auto& n : edgeNodes_) n->Render();
     for (auto& n : outputNodes_)     n->Render();
 
     // Draw links
@@ -374,8 +378,16 @@ void NodeEditor::EvaluateGraph() {
                     progress = true;
                 }
             }
-            
-            // 2e) Output node
+            //2e) EdgeDetection Node
+            for (auto& ed : edgeNodes_) {
+                if (ed->GetId() == e) {
+                    ed->SetInputImage(img);
+                    outputs[e] = ed->GetOutputImage();
+                    printf("Debug: Eval Edge %d from %d\n", e, s);
+                    progress = true;
+                }
+            }
+            // 2f) Output node
             for (auto& out : outputNodes_) {
                 if (out->GetId() == e) {
                     out->SetInputImage(img);

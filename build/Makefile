@@ -441,6 +441,30 @@ src/ColorChannelSplitterNode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/ColorChannelSplitterNode.cpp.s
 .PHONY : src/ColorChannelSplitterNode.cpp.s
 
+src/EdgeDetectionNode.o: src/EdgeDetectionNode.cpp.o
+.PHONY : src/EdgeDetectionNode.o
+
+# target to build an object file
+src/EdgeDetectionNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/EdgeDetectionNode.cpp.o
+.PHONY : src/EdgeDetectionNode.cpp.o
+
+src/EdgeDetectionNode.i: src/EdgeDetectionNode.cpp.i
+.PHONY : src/EdgeDetectionNode.i
+
+# target to preprocess a source file
+src/EdgeDetectionNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/EdgeDetectionNode.cpp.i
+.PHONY : src/EdgeDetectionNode.cpp.i
+
+src/EdgeDetectionNode.s: src/EdgeDetectionNode.cpp.s
+.PHONY : src/EdgeDetectionNode.s
+
+# target to generate assembly for a file
+src/EdgeDetectionNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/EdgeDetectionNode.cpp.s
+.PHONY : src/EdgeDetectionNode.cpp.s
+
 src/ImageProcessor.o: src/ImageProcessor.cpp.o
 .PHONY : src/ImageProcessor.o
 
@@ -633,6 +657,9 @@ help:
 	@echo "... src/ColorChannelSplitterNode.o"
 	@echo "... src/ColorChannelSplitterNode.i"
 	@echo "... src/ColorChannelSplitterNode.s"
+	@echo "... src/EdgeDetectionNode.o"
+	@echo "... src/EdgeDetectionNode.i"
+	@echo "... src/EdgeDetectionNode.s"
 	@echo "... src/ImageProcessor.o"
 	@echo "... src/ImageProcessor.i"
 	@echo "... src/ImageProcessor.s"

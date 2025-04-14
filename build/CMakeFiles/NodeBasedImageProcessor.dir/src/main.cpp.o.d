@@ -489,6 +489,7 @@ CMakeFiles/NodeBasedImageProcessor.dir/src/main.cpp.o: \
  /home/siddharth/node-based-image-processor/src/ColorChannelSplitterNode.h \
  /home/siddharth/node-based-image-processor/src/BlurNode.h \
  /home/siddharth/node-based-image-processor/src/ThresholdNode.h \
+ /home/siddharth/node-based-image-processor/src/EdgeDetectionNode.h \
  /home/siddharth/node-based-image-processor/lib/ImGuiFileDialog/ImGuiFileDialog.h \
  /home/siddharth/node-based-image-processor/lib/ImGuiFileDialog/ImGuiFileDialogConfig.h \
  /usr/include/c++/14/regex /usr/include/c++/14/bitset \
