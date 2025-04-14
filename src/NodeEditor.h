@@ -35,6 +35,7 @@
 #include "Nodes.h"                       // ImageInputNode
 #include "OutputNode.h"
 #include "BrightnessContrastNode.h"
+#include "ColorChannelSplitterNode.h"
 #include <vector>
 #include <memory>
 
@@ -57,6 +58,7 @@ private:
     std::vector<std::unique_ptr<BrightnessContrastNode>> bcNodes_;
     std::vector<std::unique_ptr<OutputNode>>           outputNodes_;
     std::vector<Link>                                  links_;
+    std::vector<std::unique_ptr<ColorChannelSplitterNode>> splitterNodes_;  
 
     void EvaluateGraph();
 };

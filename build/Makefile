@@ -393,6 +393,30 @@ src/BrightnessContrastNode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/BrightnessContrastNode.cpp.s
 .PHONY : src/BrightnessContrastNode.cpp.s
 
+src/ColorChannelSplitterNode.o: src/ColorChannelSplitterNode.cpp.o
+.PHONY : src/ColorChannelSplitterNode.o
+
+# target to build an object file
+src/ColorChannelSplitterNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/ColorChannelSplitterNode.cpp.o
+.PHONY : src/ColorChannelSplitterNode.cpp.o
+
+src/ColorChannelSplitterNode.i: src/ColorChannelSplitterNode.cpp.i
+.PHONY : src/ColorChannelSplitterNode.i
+
+# target to preprocess a source file
+src/ColorChannelSplitterNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/ColorChannelSplitterNode.cpp.i
+.PHONY : src/ColorChannelSplitterNode.cpp.i
+
+src/ColorChannelSplitterNode.s: src/ColorChannelSplitterNode.cpp.s
+.PHONY : src/ColorChannelSplitterNode.s
+
+# target to generate assembly for a file
+src/ColorChannelSplitterNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/ColorChannelSplitterNode.cpp.s
+.PHONY : src/ColorChannelSplitterNode.cpp.s
+
 src/ImageProcessor.o: src/ImageProcessor.cpp.o
 .PHONY : src/ImageProcessor.o
 
@@ -555,6 +579,9 @@ help:
 	@echo "... src/BrightnessContrastNode.o"
 	@echo "... src/BrightnessContrastNode.i"
 	@echo "... src/BrightnessContrastNode.s"
+	@echo "... src/ColorChannelSplitterNode.o"
+	@echo "... src/ColorChannelSplitterNode.i"
+	@echo "... src/ColorChannelSplitterNode.s"
 	@echo "... src/ImageProcessor.o"
 	@echo "... src/ImageProcessor.i"
 	@echo "... src/ImageProcessor.s"

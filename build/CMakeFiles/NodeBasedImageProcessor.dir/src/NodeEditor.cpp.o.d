@@ -360,6 +360,7 @@ CMakeFiles/NodeBasedImageProcessor.dir/src/NodeEditor.cpp.o: \
  /usr/include/SDL2/SDL_platform.h /usr/include/SDL2/begin_code.h \
  /usr/include/SDL2/close_code.h /usr/include/SDL2/SDL_opengl_glext.h \
  /home/siddharth/node-based-image-processor/src/BrightnessContrastNode.h \
+ /home/siddharth/node-based-image-processor/src/ColorChannelSplitterNode.h \
  /home/siddharth/node-based-image-processor/lib/imgui/imgui.h \
  /home/siddharth/node-based-image-processor/lib/imgui/imconfig.h \
  /home/siddharth/node-based-image-processor/lib/imnodes/imnodes.h

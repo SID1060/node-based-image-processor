@@ -135,6 +135,9 @@ void NodeEditor::Render() {
     if (ImGui::Button("Add Brightness/Contrast")) {
         bcNodes_.push_back(std::make_unique<BrightnessContrastNode>(nextNodeId_++));
     }
+    if (ImGui::Button("Add Channel Splitter")) {
+        splitterNodes_.push_back(std::make_unique<ColorChannelSplitterNode>(nextNodeId_++));
+    }
     if (ImGui::Button("Add Output Node")) {
         outputNodes_.push_back(std::make_unique<OutputNode>(nextNodeId_++));
     }
@@ -144,11 +147,12 @@ void NodeEditor::Render() {
     ImNodes::BeginNodeEditor();
 
     // Render all nodes
-    for (auto& n : inputNodes_)  n->Render();
-    for (auto& n : bcNodes_)     n->Render();
-    for (auto& n : outputNodes_) n->Render();
+    for (auto& n : inputNodes_)      n->Render();
+    for (auto& n : bcNodes_)         n->Render();
+    for (auto& n : splitterNodes_)   n->Render();
+    for (auto& n : outputNodes_)     n->Render();
 
-    // Draw existing links
+    // Draw links
     for (auto& link : links_) {
         ImNodes::Link(link.id, link.start_attr, link.end_attr);
     }
@@ -165,6 +169,7 @@ void NodeEditor::Render() {
     // 4) Propagate images through the graph
     EvaluateGraph();
 }
+
 void NodeEditor::EvaluateGraph() {
     std::map<int, cv::Mat> outputs;
 
@@ -192,7 +197,7 @@ void NodeEditor::EvaluateGraph() {
 
             cv::Mat img = it->second;
 
-            // 2a) Brightness/Contrast nodes
+            // 2a) Brightness/Contrast node
             for (auto& bc : bcNodes_) {
                 if (bc->GetId() == e) {
                     bc->SetInputImage(img);
@@ -202,12 +207,29 @@ void NodeEditor::EvaluateGraph() {
                 }
             }
 
-            // 2b) Output nodes (terminal)
+            // 2b) Channel Splitter node
+            for (auto& splitter : splitterNodes_) {
+                if (splitter->GetId() == e) {
+                    splitter->SetInputImage(img);
+                    printf("Debug: Eval Splitter %d from %d\n", e, s);
+                    progress = true;
+                }
+
+                // Use channel index from attribute ID
+                int outputAttr = link.start_attr;
+                int splitterId = outputAttr / 10;
+                int channelIndex = outputAttr - splitterId * 10 - 2;
+                if (splitter->GetId() == splitterId) {
+                    outputs[e] = splitter->GetChannelImage(channelIndex);
+                    printf("Debug: Splitter %d output channel %d → node %d\n", splitterId, channelIndex, e);
+                }
+            }
+
+            // 2c) Output node
             for (auto& out : outputNodes_) {
                 if (out->GetId() == e) {
                     out->SetInputImage(img);
-                    // Mark as processed so we don't redo it endlessly
-                    outputs[e] = img;
+                    outputs[e] = img; // mark as visited
                     printf("Debug: Eval Output %d from %d\n", e, s);
                     progress = true;
                 }
