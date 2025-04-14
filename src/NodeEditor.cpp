@@ -265,6 +265,9 @@ void NodeEditor::Render() {
     if (ImGui::Button("Add Blur Node")) {
         blurNodes_.push_back(std::make_unique<BlurNode>(nextNodeId_++));
     }
+    if (ImGui::Button("Add Threshold")) {
+        thresholdNodes_.push_back(std::make_unique<ThresholdNode>(nextNodeId_++));
+    }
     if (ImGui::Button("Add Output Node")) {
         outputNodes_.push_back(std::make_unique<OutputNode>(nextNodeId_++));
     }
@@ -278,6 +281,7 @@ void NodeEditor::Render() {
     for (auto& n : bcNodes_)         n->Render();
     for (auto& n : splitterNodes_)   n->Render();
     for (auto& n : blurNodes_)       n->Render();
+    for (auto& node : thresholdNodes_) node->Render();
     for (auto& n : outputNodes_)     n->Render();
 
     // Draw links
@@ -361,8 +365,17 @@ void NodeEditor::EvaluateGraph() {
                     progress = true;
                 }
             }
-
-            // 2d) Output node
+            //2d) thresholdNode
+            for (auto& thresh : thresholdNodes_) {
+                if (thresh->GetId() == e) {
+                    thresh->SetInputImage(img);
+                    outputs[e] = thresh->GetOutputImage();
+                    printf("Debug: Eval Threshold %d from %d\n", e, s);
+                    progress = true;
+                }
+            }
+            
+            // 2e) Output node
             for (auto& out : outputNodes_) {
                 if (out->GetId() == e) {
                     out->SetInputImage(img);

@@ -537,6 +537,30 @@ src/OutputNode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/OutputNode.cpp.s
 .PHONY : src/OutputNode.cpp.s
 
+src/ThresholdNode.o: src/ThresholdNode.cpp.o
+.PHONY : src/ThresholdNode.o
+
+# target to build an object file
+src/ThresholdNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/ThresholdNode.cpp.o
+.PHONY : src/ThresholdNode.cpp.o
+
+src/ThresholdNode.i: src/ThresholdNode.cpp.i
+.PHONY : src/ThresholdNode.i
+
+# target to preprocess a source file
+src/ThresholdNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/ThresholdNode.cpp.i
+.PHONY : src/ThresholdNode.cpp.i
+
+src/ThresholdNode.s: src/ThresholdNode.cpp.s
+.PHONY : src/ThresholdNode.s
+
+# target to generate assembly for a file
+src/ThresholdNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/ThresholdNode.cpp.s
+.PHONY : src/ThresholdNode.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -621,6 +645,9 @@ help:
 	@echo "... src/OutputNode.o"
 	@echo "... src/OutputNode.i"
 	@echo "... src/OutputNode.s"
+	@echo "... src/ThresholdNode.o"
+	@echo "... src/ThresholdNode.i"
+	@echo "... src/ThresholdNode.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

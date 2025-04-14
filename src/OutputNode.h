@@ -50,41 +50,66 @@
 
 // #endif
 
+// #ifndef OUTPUT_NODE_H
+// #define OUTPUT_NODE_H
+
+// #include <opencv2/opencv.hpp>
+// #include <string>
+// #include <SDL_opengl.h>
+
+// class OutputNode {
+// public:
+//     // Constructor takes an integer ID.
+//     OutputNode(int id);
+
+//     // Accessor for node ID.
+//     int GetId() const;
+
+//     // Renders the node (including a preview image, etc.)
+//     void Render();
+
+//     // Sets the input image and uploads it as a texture.
+//     void SetInputImage(const cv::Mat &img);
+
+// private:
+//     int id_;
+//     cv::Mat image_;
+//     GLuint textureID_;
+//     int quality_;
+//     bool imageAvailable_;
+
+//     // Saves the image to disk using a file dialog.
+//     void SaveImage();
+
+//     // Uploads the cv::Mat image data to an OpenGL texture.
+//     void UploadTexture();
+// };
+
+// #endif
+
+
 #ifndef OUTPUT_NODE_H
 #define OUTPUT_NODE_H
 
-#include <opencv2/opencv.hpp>
-#include <string>
-#include <SDL_opengl.h>
+#include <opencv2/core.hpp>
 
 class OutputNode {
 public:
-    // Constructor takes an integer ID.
     OutputNode(int id);
-
-    // Accessor for node ID.
     int GetId() const;
 
-    // Renders the node (including a preview image, etc.)
+    void SetInputImage(const cv::Mat& img);
     void Render();
-
-    // Sets the input image and uploads it as a texture.
-    void SetInputImage(const cv::Mat &img);
 
 private:
     int id_;
     cv::Mat image_;
-    GLuint textureID_;
+    unsigned int textureID_;
     int quality_;
     bool imageAvailable_;
 
-    // Saves the image to disk using a file dialog.
-    void SaveImage();
-
-    // Uploads the cv::Mat image data to an OpenGL texture.
     void UploadTexture();
+    void SaveImage();
 };
 
 #endif
-
-

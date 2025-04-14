@@ -76,6 +76,7 @@
 #include "BrightnessContrastNode.h"
 #include "ColorChannelSplitterNode.h"
 #include "BlurNode.h"                   // <-- Add this line
+#include "ThresholdNode.h"
 #include <vector>
 #include <memory>
 
@@ -99,6 +100,7 @@ private:
     std::vector<std::unique_ptr<BlurNode>> blurNodes_;                    // <-- Add this line
     std::vector<std::unique_ptr<OutputNode>> outputNodes_;
     std::vector<std::unique_ptr<ColorChannelSplitterNode>> splitterNodes_;
+    std::vector<std::unique_ptr<ThresholdNode>> thresholdNodes_;
     std::vector<Link> links_;
 
     void EvaluateGraph();

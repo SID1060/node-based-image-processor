@@ -25,6 +25,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/siddharth/node-based-image-processor/src/NodeEditor.cpp" "CMakeFiles/NodeBasedImageProcessor.dir/src/NodeEditor.cpp.o" "gcc" "CMakeFiles/NodeBasedImageProcessor.dir/src/NodeEditor.cpp.o.d"
   "/home/siddharth/node-based-image-processor/src/Nodes.cpp" "CMakeFiles/NodeBasedImageProcessor.dir/src/Nodes.cpp.o" "gcc" "CMakeFiles/NodeBasedImageProcessor.dir/src/Nodes.cpp.o.d"
   "/home/siddharth/node-based-image-processor/src/OutputNode.cpp" "CMakeFiles/NodeBasedImageProcessor.dir/src/OutputNode.cpp.o" "gcc" "CMakeFiles/NodeBasedImageProcessor.dir/src/OutputNode.cpp.o.d"
+  "/home/siddharth/node-based-image-processor/src/ThresholdNode.cpp" "CMakeFiles/NodeBasedImageProcessor.dir/src/ThresholdNode.cpp.o" "gcc" "CMakeFiles/NodeBasedImageProcessor.dir/src/ThresholdNode.cpp.o.d"
   "/home/siddharth/node-based-image-processor/src/main.cpp" "CMakeFiles/NodeBasedImageProcessor.dir/src/main.cpp.o" "gcc" "CMakeFiles/NodeBasedImageProcessor.dir/src/main.cpp.o.d"
   )
 

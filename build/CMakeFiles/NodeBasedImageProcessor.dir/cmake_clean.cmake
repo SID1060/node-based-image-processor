@@ -33,6 +33,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/NodeBasedImageProcessor.dir/src/Nodes.cpp.o.d"
   "CMakeFiles/NodeBasedImageProcessor.dir/src/OutputNode.cpp.o"
   "CMakeFiles/NodeBasedImageProcessor.dir/src/OutputNode.cpp.o.d"
+  "CMakeFiles/NodeBasedImageProcessor.dir/src/ThresholdNode.cpp.o"
+  "CMakeFiles/NodeBasedImageProcessor.dir/src/ThresholdNode.cpp.o.d"
   "CMakeFiles/NodeBasedImageProcessor.dir/src/main.cpp.o"
   "CMakeFiles/NodeBasedImageProcessor.dir/src/main.cpp.o.d"
   "NodeBasedImageProcessor"
