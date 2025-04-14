@@ -441,6 +441,30 @@ src/ColorChannelSplitterNode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/ColorChannelSplitterNode.cpp.s
 .PHONY : src/ColorChannelSplitterNode.cpp.s
 
+src/ConvolutionNode.o: src/ConvolutionNode.cpp.o
+.PHONY : src/ConvolutionNode.o
+
+# target to build an object file
+src/ConvolutionNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/ConvolutionNode.cpp.o
+.PHONY : src/ConvolutionNode.cpp.o
+
+src/ConvolutionNode.i: src/ConvolutionNode.cpp.i
+.PHONY : src/ConvolutionNode.i
+
+# target to preprocess a source file
+src/ConvolutionNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/ConvolutionNode.cpp.i
+.PHONY : src/ConvolutionNode.cpp.i
+
+src/ConvolutionNode.s: src/ConvolutionNode.cpp.s
+.PHONY : src/ConvolutionNode.s
+
+# target to generate assembly for a file
+src/ConvolutionNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/ConvolutionNode.cpp.s
+.PHONY : src/ConvolutionNode.cpp.s
+
 src/EdgeDetectionNode.o: src/EdgeDetectionNode.cpp.o
 .PHONY : src/EdgeDetectionNode.o
 
@@ -657,6 +681,9 @@ help:
 	@echo "... src/ColorChannelSplitterNode.o"
 	@echo "... src/ColorChannelSplitterNode.i"
 	@echo "... src/ColorChannelSplitterNode.s"
+	@echo "... src/ConvolutionNode.o"
+	@echo "... src/ConvolutionNode.i"
+	@echo "... src/ConvolutionNode.s"
 	@echo "... src/EdgeDetectionNode.o"
 	@echo "... src/EdgeDetectionNode.i"
 	@echo "... src/EdgeDetectionNode.s"

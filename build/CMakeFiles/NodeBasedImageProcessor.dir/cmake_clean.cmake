@@ -25,6 +25,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/NodeBasedImageProcessor.dir/src/BrightnessContrastNode.cpp.o.d"
   "CMakeFiles/NodeBasedImageProcessor.dir/src/ColorChannelSplitterNode.cpp.o"
   "CMakeFiles/NodeBasedImageProcessor.dir/src/ColorChannelSplitterNode.cpp.o.d"
+  "CMakeFiles/NodeBasedImageProcessor.dir/src/ConvolutionNode.cpp.o"
+  "CMakeFiles/NodeBasedImageProcessor.dir/src/ConvolutionNode.cpp.o.d"
   "CMakeFiles/NodeBasedImageProcessor.dir/src/EdgeDetectionNode.cpp.o"
   "CMakeFiles/NodeBasedImageProcessor.dir/src/EdgeDetectionNode.cpp.o.d"
   "CMakeFiles/NodeBasedImageProcessor.dir/src/ImageProcessor.cpp.o"

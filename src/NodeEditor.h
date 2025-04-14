@@ -78,6 +78,7 @@
 #include "BlurNode.h"                   // <-- Add this line
 #include "ThresholdNode.h"
 #include "EdgeDetectionNode.h"
+#include "ConvolutionNode.h"
 #include <vector>
 #include <memory>
 
@@ -103,6 +104,7 @@ private:
     std::vector<std::unique_ptr<ColorChannelSplitterNode>> splitterNodes_;
     std::vector<std::unique_ptr<ThresholdNode>> thresholdNodes_;
     std::vector<std::unique_ptr<EdgeDetectionNode>>       edgeNodes_;
+    std::vector<std::unique_ptr<ConvolutionNode>> convNodes_;
     std::vector<Link> links_;
 
     void EvaluateGraph();
