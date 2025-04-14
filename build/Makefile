@@ -561,6 +561,30 @@ src/Nodes.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/Nodes.cpp.s
 .PHONY : src/Nodes.cpp.s
 
+src/NoiseNode.o: src/NoiseNode.cpp.o
+.PHONY : src/NoiseNode.o
+
+# target to build an object file
+src/NoiseNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/NoiseNode.cpp.o
+.PHONY : src/NoiseNode.cpp.o
+
+src/NoiseNode.i: src/NoiseNode.cpp.i
+.PHONY : src/NoiseNode.i
+
+# target to preprocess a source file
+src/NoiseNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/NoiseNode.cpp.i
+.PHONY : src/NoiseNode.cpp.i
+
+src/NoiseNode.s: src/NoiseNode.cpp.s
+.PHONY : src/NoiseNode.s
+
+# target to generate assembly for a file
+src/NoiseNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeBasedImageProcessor.dir/build.make CMakeFiles/NodeBasedImageProcessor.dir/src/NoiseNode.cpp.s
+.PHONY : src/NoiseNode.cpp.s
+
 src/OutputNode.o: src/OutputNode.cpp.o
 .PHONY : src/OutputNode.o
 
@@ -696,6 +720,9 @@ help:
 	@echo "... src/Nodes.o"
 	@echo "... src/Nodes.i"
 	@echo "... src/Nodes.s"
+	@echo "... src/NoiseNode.o"
+	@echo "... src/NoiseNode.i"
+	@echo "... src/NoiseNode.s"
 	@echo "... src/OutputNode.o"
 	@echo "... src/OutputNode.i"
 	@echo "... src/OutputNode.s"

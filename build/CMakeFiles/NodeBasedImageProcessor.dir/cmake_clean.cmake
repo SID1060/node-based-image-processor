@@ -35,6 +35,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/NodeBasedImageProcessor.dir/src/NodeEditor.cpp.o.d"
   "CMakeFiles/NodeBasedImageProcessor.dir/src/Nodes.cpp.o"
   "CMakeFiles/NodeBasedImageProcessor.dir/src/Nodes.cpp.o.d"
+  "CMakeFiles/NodeBasedImageProcessor.dir/src/NoiseNode.cpp.o"
+  "CMakeFiles/NodeBasedImageProcessor.dir/src/NoiseNode.cpp.o.d"
   "CMakeFiles/NodeBasedImageProcessor.dir/src/OutputNode.cpp.o"
   "CMakeFiles/NodeBasedImageProcessor.dir/src/OutputNode.cpp.o.d"
   "CMakeFiles/NodeBasedImageProcessor.dir/src/ThresholdNode.cpp.o"
