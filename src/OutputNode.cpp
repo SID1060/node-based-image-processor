@@ -11,33 +11,28 @@
 #include <vector>
 #include <string>
 
-// Constructor
 OutputNode::OutputNode(int id)
-    : id_(id), textureID_(0), quality_(95), imageAvailable_(false)
+    : id_(id), textureID_(0), quality_(95), imageAvailable_(false), dirty_(false)
 {
     printf("Debug: OutputNode(%d) constructed\n", id_);
 }
 
-// Accessor for node ID
 int OutputNode::GetId() const {
     return id_;
 }
 
-// Sets the input image and uploads it as a texture.
 void OutputNode::SetInputImage(const cv::Mat &img) {
     printf("Debug: OutputNode(%d)::SetInputImage called. img size = %dx%d\n", id_, img.cols, img.rows);
     image_ = img.clone();
     imageAvailable_ = !img.empty();
-    if (textureID_) {
-        glDeleteTextures(1, &textureID_);
-        textureID_ = 0;
-    }
-    if (imageAvailable_) {
-        UploadTexture();
-    }
+    dirty_ = true; // Mark dirty when new image arrives
 }
 
-// Uploads the image data to an OpenGL texture.
+// Allows external control to mark the image as needing update
+void OutputNode::MarkDirty() {
+    dirty_ = true;
+}
+
 void OutputNode::UploadTexture() {
     printf("Debug: OutputNode(%d)::UploadTexture()\n", id_);
 
@@ -59,6 +54,11 @@ void OutputNode::UploadTexture() {
         return;
     }
 
+    if (textureID_) {
+        glDeleteTextures(1, &textureID_);
+        textureID_ = 0;
+    }
+
     glGenTextures(1, &textureID_);
     glBindTexture(GL_TEXTURE_2D, textureID_);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
@@ -75,7 +75,6 @@ void OutputNode::UploadTexture() {
            format == GL_RGB ? "RGB" : "RGBA");
 }
 
-// Opens a file dialog and saves the current image to disk.
 void OutputNode::SaveImage() {
     if (!imageAvailable_) return;
 
@@ -104,9 +103,8 @@ void OutputNode::SaveImage() {
     }
 }
 
-// Renders the Output node.
 void OutputNode::Render() {
-    printf("Debug: OutputNode(%d)::Render(), imageAvailable = %d\n", id_, imageAvailable_);
+    printf("Debug: OutputNode(%d)::Render(), imageAvailable = %d, dirty = %d\n", id_, imageAvailable_, dirty_);
     ImNodes::BeginNode(id_);
 
     ImNodes::BeginNodeTitleBar();
@@ -118,6 +116,11 @@ void OutputNode::Render() {
     ImNodes::EndInputAttribute();
 
     if (imageAvailable_) {
+        if (dirty_) {
+            UploadTexture();
+            dirty_ = false;
+        }
+
         ImGui::Text("Preview:");
         ImGui::Image((ImTextureID)(intptr_t)textureID_, ImVec2(128,128));
         ImGui::SliderInt("Quality", &quality_, 1, 100);
@@ -130,3 +133,4 @@ void OutputNode::Render() {
 
     ImNodes::EndNode();
 }
+

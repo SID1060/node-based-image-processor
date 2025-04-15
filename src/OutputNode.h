@@ -11,12 +11,15 @@ public:
     void SetInputImage(const cv::Mat& img); // External update method
     void Render();
 
+    void MarkDirty(); // Call when upstream image updates
+
 private:
     int id_;
     cv::Mat image_;
     unsigned int textureID_;
     int quality_;
     bool imageAvailable_;
+    bool dirty_; // NEW
 
     void UploadTexture();
     void SaveImage();
