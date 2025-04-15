@@ -492,6 +492,7 @@ CMakeFiles/NodeBasedImageProcessor.dir/src/main.cpp.o: \
  /home/siddharth/node-based-image-processor/src/EdgeDetectionNode.h \
  /home/siddharth/node-based-image-processor/src/ConvolutionNode.h \
  /home/siddharth/node-based-image-processor/src/NoiseNode.h \
+ /home/siddharth/node-based-image-processor/src/BlendNode.h \
  /home/siddharth/node-based-image-processor/lib/ImGuiFileDialog/ImGuiFileDialog.h \
  /home/siddharth/node-based-image-processor/lib/ImGuiFileDialog/ImGuiFileDialogConfig.h \
  /usr/include/c++/14/regex /usr/include/c++/14/bitset \

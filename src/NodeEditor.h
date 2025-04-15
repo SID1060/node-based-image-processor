@@ -80,6 +80,7 @@
 #include "EdgeDetectionNode.h"
 #include "ConvolutionNode.h"
 #include "NoiseNode.h"
+#include "BlendNode.h"
 #include <vector>
 #include <memory>
 
@@ -107,6 +108,7 @@ private:
     std::vector<std::unique_ptr<EdgeDetectionNode>>       edgeNodes_;
     std::vector<std::unique_ptr<ConvolutionNode>> convNodes_;
     std::vector<std::unique_ptr<NoiseNode>>       noiseNodes_;
+    std::vector<std::unique_ptr<BlendNode>>       blendNodes_;
     std::vector<Link> links_;
 
     void EvaluateGraph();

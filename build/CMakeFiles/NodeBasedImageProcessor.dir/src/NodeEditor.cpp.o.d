@@ -362,6 +362,7 @@ CMakeFiles/NodeBasedImageProcessor.dir/src/NodeEditor.cpp.o: \
  /home/siddharth/node-based-image-processor/src/EdgeDetectionNode.h \
  /home/siddharth/node-based-image-processor/src/ConvolutionNode.h \
  /home/siddharth/node-based-image-processor/src/NoiseNode.h \
+ /home/siddharth/node-based-image-processor/src/BlendNode.h \
  /home/siddharth/node-based-image-processor/lib/imgui/imgui.h \
  /home/siddharth/node-based-image-processor/lib/imgui/imconfig.h \
  /home/siddharth/node-based-image-processor/lib/imnodes/imnodes.h
