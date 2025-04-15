@@ -23,7 +23,7 @@ This project is a node-based image manipulation interface developed for the "Nod
 
 ---
 
-## Required Nodes
+## Nodes
 
 ### Basic Nodes
 
